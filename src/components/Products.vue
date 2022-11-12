@@ -24,14 +24,16 @@
                             </div>
                             <h3>{{product}}</h3>
                             <p class="product-price"> ${{data.price}} </p>
-                            <a v-if="data.stock!=0" class="cart-btn" @click="$root.addToCart(product)"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+                            <a v-if="data.stock!=0" class="cart-btn" @click="$root.addToCart(product); add(chunk[product])"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+                            <div v-show="data.added">
+                                <h6>Item added to cart</h6>
+                            </div>
                             <a v-if="data.stock==0" class="outofstock-btn" >Out of Stock</a>
                         </div>
                     </template>
                 </div>
             </div>
         </div>
-
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="pagination-wrap">
@@ -86,6 +88,7 @@
                 for (let product in this.$root.inventory) {
                     if (this.$root.inventory[product].tags.indexOf(this.filter) > -1 || this.filter === 'all') {
                         chunk[product] = this.$root.inventory[product]
+                        chunk[product].added = false
                         if (entries % this.layout[0] == 0) {
                             chunk.pageNumber = pageNumber
                             chunks.push(chunk)
@@ -118,6 +121,15 @@
             },
             btoa: function (s) {
                 return btoa(s)
+            },
+            add: function (productObj) {
+                if (productObj.added) {
+                    productObj.added=false
+                    setTimeout(()=>{productObj.added=true},300)
+                }
+                else {
+                    productObj.added=true
+                }
             }
         }
     }

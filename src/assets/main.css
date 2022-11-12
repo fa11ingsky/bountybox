@@ -133,7 +133,14 @@ h5, .h5 {
 h6, .h6 {
     font-size: 1rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 3rem;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+
 }
 
 p {
@@ -1376,6 +1383,12 @@ ul.product-share li:hover a {
         box-shadow: none;
     }
 
+.custom-add-to-cart-message {
+    background-color: #eee;
+    padding: 10px 20px;
+    margin-top: 22px;
+}
+
 .search-bar-tablecell button[type=submit] {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -2493,7 +2506,7 @@ p.product-price {
     }
 
 a.cart-btn {
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
     display: inline-block;
 
     background-color: #000;
