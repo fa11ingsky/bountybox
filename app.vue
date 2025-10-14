@@ -90,13 +90,15 @@
         <div class="container">
             <div class="row">
                 <div class="text-center">
-                    <div class="social-icons">
+                    <!-- for when we set these up
+                     <div class="social-icons">
                         <ul>
                             <li><nuxt-link to="/" target="_blank"><i class="fab fa-facebook-f"></i></nuxt-link></li>
                             <li><nuxt-link to="/" target="_blank"><i class="fab fa-twitter"></i></nuxt-link></li>
                             <li><nuxt-link to="/" target="_blank"><i class="fa fa-earth-americas"></i></nuxt-link></li>
                         </ul>
                     </div>
+                -->
                     <div class="text-center">
                         <p>Copyrights &copy; 2022 - <a href="https://www.armourscope.com/">ArmourScope</a>,  All Rights Reserved.</p>
                     </div>
