@@ -152,10 +152,7 @@ export default {
                 name: "description",
                 content: "Now selling Pokemon Trading Card Game (TCG). Buy Singles to complete that collection or refine your competitive deck! Collectibles, art and boutique merchanise for the everyday ethusiast or the avid aficionado. We've got you covered! "
             }],
-            script: [{
-                src: "https://www.paypal.com/sdk/js?client-id=AShtjOKOVOkbYPS-_g64mbyXfzrDpaeuWIQ9JDWnZUH7VW-4UdmGR-t5Ip2SKPqyT6mC7FvJRQ4BIGTG&enable-funding=venmo&currency=AUD",
-                "data-sdk-integration-source": "button-factory"
-            },
+            script: [
             {
                 src: "https://www.googletagmanager.com/gtag/js?id=G-RBKQ6Z3JE4"
             },

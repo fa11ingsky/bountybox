@@ -71,12 +71,6 @@
                     Go to Checkout
                 </a>
             </div>
-            
-            <div id="smart-button-container">
-                <div style="text-align: center;">
-                    <div id="paypal-button-container"></div>
-                </div>
-            </div>
 
         </div>
     </div>
@@ -130,15 +124,6 @@ export default {
                 sub += this.inventory[product].price * this.cart[product];
             }
             return sub;
-        },
-        description() {
-            let descr = ""
-            for (let product in this.cart) {
-                descr += this.cart[product] > 0 ? `${product} x${this.cart[product]} ; ` : ''
-            }
-            descr += this.promoCode.trim() in promos ? `${this.promoCode.trim()}; ` : ''
-            descr += `shp${this.shipping}; `
-            return descr
         }
     },
     methods: {
@@ -191,43 +176,6 @@ export default {
             window.location.href = data.url
         },
 
-        // paypal button
-        initPayPalButton: function (self) {
-            paypal.Buttons({
-                style: {
-                    shape: 'rect',
-                    color: 'blue',
-                    layout: 'vertical',
-                    label: 'checkout',
-
-                },
-
-                createOrder: function (data, actions) {
-                    return actions.order.create({
-                        purchase_units: [{ "description": self.description, "amount": { "currency_code": "AUD", "value": self.discountTotal + self.shipping } }]
-                    });
-                },
-
-                onApprove: function (data, actions) {
-                    return actions.order.capture().then(function (orderData) {
-
-                        // Full available details
-                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-                        // Show a success message within this page, e.g.
-                        const element = document.getElementById('paypal-button-container');
-                        element.innerHTML = '';
-                        element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-                        // Or go to another URL:  actions.redirect('thank_you.html');
-
-                    });
-                },
-                onError: function (err) {
-                    console.log(err);
-                }
-            }).render('#paypal-button-container');
-        },
         btoa: function (s) {
             return btoa(s)
         }
@@ -235,10 +183,7 @@ export default {
     mounted() {        
         // need to wait for paypal sdk to load
         setTimeout(() => {
-            this.loading = !this.loading
-            if (Object.keys(this.cart).length > 0) {
-                this.initPayPalButton(this)
-            }
+            this.loading = !this.loading            
         }, 1000)
 
     }
