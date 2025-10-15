@@ -65,8 +65,7 @@
         <hr>
         <div class="checkout">
             <div style="text-align: center; margin-bottom: 16px;">
-                <a @click="payWithStripe()"
-                    style="display: block; width: 100%; max-width: 400px; margin: 0 auto; background: #635bff; color: #fff; padding: 12px 32px; border-radius: 6px; font-size: 16px; font-weight: 600; text-decoration: none; box-shadow: 0 2px 8px rgba(99,91,255,0.15); transition: background 0.2s; border: none; letter-spacing: 0.5px; text-align: center;">
+                <a @click="payWithStripe()" class="stripe-btn">
                     Go to Checkout
                 </a>
             </div>
@@ -145,7 +144,7 @@ export default {
         payWithStripe: async function () {
             console.log("Stripe Checkout")
             console.log(this.cart)
-            
+
             // convert cart to array of items for stripe
             let cartItems = []
             for (let product in this.cart) {
@@ -155,7 +154,7 @@ export default {
             // add shipping as an item
             if (this.shipping > 0) {
                 cartItems.push({ price: this.shipping, quantity: 1, name: `Shipping (${this.country})` })
-            }   
+            }
 
             const body = {
                 cart: cartItems,
@@ -178,7 +177,7 @@ export default {
             return btoa(s)
         }
     },
-    mounted() {             
+    mounted() {
     }
 }
 </script>
@@ -186,5 +185,24 @@ export default {
 <style>
 .mod-btn {
     color: black;
+}
+
+.stripe-btn {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #635bff;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(99, 91, 255, 0.15);
+    transition: background 0.2s;
+    border: none;
+    letter-spacing: 0.5px;
+    text-align: center;
 }
 </style>
