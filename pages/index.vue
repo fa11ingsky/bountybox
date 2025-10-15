@@ -8,10 +8,12 @@
                 <div class="product-filters">
                     <ul>
                         <li :class="filter == 'all' ? 'active' : ''" @click="filter = 'all'; pageNumber = 1">All</li>
-                        <li :class="filter == 'pokemon' ? 'active' : ''" @click="filter = 'pokemon'; pageNumber = 1">Pokemon
+                        <li :class="filter == 'pokemon' ? 'active' : ''" @click="filter = 'pokemon'; pageNumber = 1">
+                            Pokemon
                         </li>
                         <li :class="filter == 'mats' ? 'active' : ''" @click="filter = 'mats'; pageNumber = 1">Mats</li>
-                        <li :class="filter == 'comics' ? 'active' : ''" @click="filter = 'comics'; pageNumber = 1">Comics</li>
+                        <li :class="filter == 'comics' ? 'active' : ''" @click="filter = 'comics'; pageNumber = 1">
+                            Comics</li>
                     </ul>
                 </div>
             </div>
@@ -42,21 +44,29 @@
                 <div class="pagination-wrap">
                     <ul>
                         <li><a @click="setPageNumber('prev')">Prev</a></li>
-                        <li><a :class="pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{ pageNumber > 1 ?
-                                pageNumber-1 : pageNumber}}</a></li>
+                        <li><a :class="pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{ pageNumber >
+                            1 ?
+                            pageNumber - 1 : pageNumber }}</a></li>
                         <li><a :class="(pageNumber != 1 && pageNumber != maxPage + 1) ? 'active' : ''"
-                                @click="setPageNumber('mid')">{{ pageNumber > 1 ? pageNumber : pageNumber + 1 }}</a></li>
-                        <li><a @click="setPageNumber('last')">{{ pageNumber > 1 ? pageNumber + 1 : pageNumber + 2 }}</a></li>
+                                @click="setPageNumber('mid')">{{ pageNumber > 1 ? pageNumber : pageNumber + 1 }}</a>
+                        </li>
+                        <li><a @click="setPageNumber('last')">{{ pageNumber > 1 ? pageNumber + 1 : pageNumber + 2 }}</a>
+                        </li>
                         <li><a @click="setPageNumber('next')">Next</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!-- Notification Box -->
+        <transition name="fade">
+            <div v-if="showCartNotification" class="cart-notification">
+                Item added to cart
+            </div>
+        </transition>
     </div>
 </template>
 
 <script>
-
 export default {
     name: "Products",
     setup() {
@@ -75,7 +85,23 @@ export default {
             "items": 0,
             "layout": [3, 2],
             "filter": "pokemon",
-            "searchFilter": ""
+            "searchFilter": "",
+            "showCartNotification": false
+        }
+    },
+    watch: {
+        cart: {
+            handler(newCart, oldCart) {
+                if (Object.keys(newCart).length > 0) {
+                    this.showCartNotification = true
+                    setTimeout(() => {
+                        this.showCartNotification = false
+                    }, 2000)
+                }
+
+
+            },
+            deep: true
         }
     },
     computed: {
@@ -142,3 +168,69 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.cart-notification {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+    color: #fff;
+    padding: 18px 36px;
+    border-radius: 16px 4px 16px 4px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 6px 24px rgba(221, 36, 118, 0.25), 0 1.5px 6px rgba(0, 0, 0, 0.10);
+    z-index: 9999;
+    opacity: 0.98;
+    pointer-events: none;
+    letter-spacing: 1px;
+    animation: pop-in 0.5s cubic-bezier(.68, -0.55, .27, 1.55);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-notification::before {
+    content: "🎉";
+    font-size: 1.7em;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(0.7) translateY(40px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.05) translateY(-6px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.4s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+</style>
