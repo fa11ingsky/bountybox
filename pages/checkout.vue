@@ -159,7 +159,7 @@ export default {
 
             const body = {
                 cart: cartItems,
-                success_url: window.location.origin + '/thank_you',
+                success_url: window.location.origin + '/thankyou',
                 cancel_url: window.location.origin + '/checkout'
             };
             if (this.promoApplied) {
