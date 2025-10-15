@@ -64,7 +64,6 @@
         </div>
         <hr>
         <div class="checkout">
-            <div v-if="loading" class="total">Loading Payment Options...</div>
             <div style="text-align: center; margin-bottom: 16px;">
                 <a @click="payWithStripe()"
                     style="display: block; width: 100%; max-width: 400px; margin: 0 auto; background: #635bff; color: #fff; padding: 12px 32px; border-radius: 6px; font-size: 16px; font-weight: 600; text-decoration: none; box-shadow: 0 2px 8px rgba(99,91,255,0.15); transition: background 0.2s; border: none; letter-spacing: 0.5px; text-align: center;">
@@ -95,8 +94,7 @@ export default {
     data() {
         return {
             country: "Australia",
-            promoCode: "",
-            loading: true
+            promoCode: ""
         }
     },
     computed: {
@@ -180,12 +178,7 @@ export default {
             return btoa(s)
         }
     },
-    mounted() {        
-        // need to wait for paypal sdk to load
-        setTimeout(() => {
-            this.loading = !this.loading            
-        }, 1000)
-
+    mounted() {             
     }
 }
 </script>
