@@ -98,7 +98,7 @@
                             <li><nuxt-link to="/" target="_blank"><i class="fa fa-earth-americas"></i></nuxt-link></li>
                         </ul>
                     </div>
-                -->
+                    -->
                     <div class="text-center">
                         <p>Copyrights &copy; 2022 - <a href="https://www.armourscope.com/">ArmourScope</a>, All Rights
                             Reserved.</p>
