@@ -17,7 +17,7 @@
                                     <div class="header-icons">
                                         <nuxt-link class="shopping-cart" to="/checkout">
                                             <i class="fas fa-lg fa-shopping-cart"></i>
-                                            <span class="fas cart-items">{{cartItems}}</span>
+                                            <span class="fas cart-items">{{ cartItems }}</span>
                                         </nuxt-link>
                                         <nuxt-link class="home" to="/">
                                             <i class="fas fa-lg fa-home"></i>
@@ -100,7 +100,8 @@
                     </div>
                 -->
                     <div class="text-center">
-                        <p>Copyrights &copy; 2022 - <a href="https://www.armourscope.com/">ArmourScope</a>,  All Rights Reserved.</p>
+                        <p>Copyrights &copy; 2022 - <a href="https://www.armourscope.com/">ArmourScope</a>, All Rights
+                            Reserved.</p>
                     </div>
                 </div>
             </div>
@@ -109,78 +110,78 @@
 </template>
 
 <script>
-    // CSS
-    import '~/assets/main.css'
-    import '~/assets/cart.css'
-    import '~/assets/responsive.css'
+// CSS
+import '~/assets/main.css'
+import '~/assets/cart.css'
+import '~/assets/responsive.css'
 
-    export default {
-        setup() {
-            const inventory = getInventory()
-            let cart = getCart()
+export default {
+    setup() {
+        const inventory = getInventory()
+        let cart = getCart()
 
-            return {
-                inventory,
-                cart
+        return {
+            inventory,
+            cart
+        }
+    },
+    computed: {
+        cartItems() {
+            let items = 0
+            for (let product in this.cart) {
+                items += this.cart[product]
             }
-        },
-        computed: {
-            cartItems() {
-                let items = 0
-                for (let product in this.cart) {
-                    items += this.cart[product]
-                }
-                return items
-            }
-        },
-        watch: {
-            cart: {
-                handler(val) {
-                    localStorage.setItem('cart', JSON.stringify(val))
-                }, deep: true
-            }
-        },
-        head() {
-            return {
-                title: 'Bounty Box: Collectibles and More',
-                link: [{
-                    rel: "icon",
-                    href: "/img/favicon.png"
-                }],
-                meta: [{
-                    name: "description",
-                    content: "Now selling Pokemon Trading Card Game (TCG). Buy Singles to complete that collection or refine your competitive deck! Collectibles, art and boutique merchanise for the everyday ethusiast or the avid aficionado. We've got you covered! "
-                }],
-                script: [{
-                    src: "https://www.paypal.com/sdk/js?client-id=AShtjOKOVOkbYPS-_g64mbyXfzrDpaeuWIQ9JDWnZUH7VW-4UdmGR-t5Ip2SKPqyT6mC7FvJRQ4BIGTG&enable-funding=venmo&currency=AUD",
-                    "data-sdk-integration-source": "button-factory"
-                },
-                {
-                    src: "https://www.googletagmanager.com/gtag/js?id=G-RBKQ6Z3JE4"
-                },
-                {
-                    children:`window.dataLayer = window.dataLayer || [];
+            return items
+        }
+    },
+    watch: {
+        cart: {
+            handler(val) {
+                localStorage.setItem('cart', JSON.stringify(val))
+            }, deep: true
+        }
+    },
+    head() {
+        return {
+            title: 'Bounty Box: Collectibles and More',
+            link: [{
+                rel: "icon",
+                href: "/img/favicon.png"
+            }],
+            meta: [{
+                name: "description",
+                content: "Now selling Pokemon Trading Card Game (TCG). Buy Singles to complete that collection or refine your competitive deck! Collectibles, art and boutique merchanise for the everyday ethusiast or the avid aficionado. We've got you covered! "
+            }],
+            script: [{
+                src: "https://www.paypal.com/sdk/js?client-id=AShtjOKOVOkbYPS-_g64mbyXfzrDpaeuWIQ9JDWnZUH7VW-4UdmGR-t5Ip2SKPqyT6mC7FvJRQ4BIGTG&enable-funding=venmo&currency=AUD",
+                "data-sdk-integration-source": "button-factory"
+            },
+            {
+                src: "https://www.googletagmanager.com/gtag/js?id=G-RBKQ6Z3JE4"
+            },
+            {
+                children: `window.dataLayer = window.dataLayer || [];
                         function gtag() { dataLayer.push(arguments); }
                         gtag('js', new Date());
                         console.log('running')
                         gtag('config', 'G-RBKQ6Z3JE4');`
-                }]
-            }
-        },
-        data() {
-            return {
-                loading: true
-            }
-        },
-        mounted() {
-            this.loading = !this.loading
-            this.cart = localStorage.cart ? JSON.parse(localStorage.cart) : {}
+            }]
         }
+    },
+    data() {
+        return {
+            loading: true
+        }
+    },
+    mounted() {
+        this.loading = !this.loading
+        this.cart = localStorage.cart ? JSON.parse(localStorage.cart) : {}
     }
+}
 </script>
 
 <style>
-    .view-section {
-        margin-top: 20px;
-    }
+.view-section {
+    margin-top: 20px;
+}
 </style>
