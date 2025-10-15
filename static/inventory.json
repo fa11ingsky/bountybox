@@ -67,7 +67,7 @@
     "tags": [
       "pokemon"
     ],
-    "stock": 1
+    "stock": 0
   },
   "Volcarona GX (SM12 252)": {
     "price": 34,
@@ -2010,7 +2010,7 @@
     ],
     "stock": 0
   },
-  "Poké Kid  (SWSH1 173)": {
+  "Pokï¿½ Kid  (SWSH1 173)": {
     "img": "SWSH1_173.jpg",
     "price": "N/A",
     "url": "SWSH1_173",
@@ -2020,7 +2020,7 @@
     ],
     "stock": 0
   },
-  "Pokégear 3.0  (SWSH1 174)": {
+  "Pokï¿½gear 3.0  (SWSH1 174)": {
     "img": "SWSH1_174.jpg",
     "price": "N/A",
     "url": "SWSH1_174",
@@ -2030,7 +2030,7 @@
     ],
     "stock": 0
   },
-  "Pokémon Catcher  (SWSH1 175)": {
+  "Pokï¿½mon Catcher  (SWSH1 175)": {
     "img": "SWSH1_175.jpg",
     "price": "N/A",
     "url": "SWSH1_175",
@@ -2040,7 +2040,7 @@
     ],
     "stock": 0
   },
-  "Pokémon Center Lady  (SWSH1 176)": {
+  "Pokï¿½mon Center Lady  (SWSH1 176)": {
     "img": "SWSH1_176.jpg",
     "price": "N/A",
     "url": "SWSH1_176",
@@ -2060,7 +2060,7 @@
     ],
     "stock": 0
   },
-  "Professor’s Research  (SWSH1 178)": {
+  "Professorï¿½s Research  (SWSH1 178)": {
     "img": "SWSH1_178.jpg",
     "price": "N/A",
     "url": "SWSH1_178",
@@ -2290,7 +2290,7 @@
     ],
     "stock": 0
   },
-  "Professor’s Research  (SWSH1 201)": {
+  "Professorï¿½s Research  (SWSH1 201)": {
     "img": "SWSH1_201.jpg",
     "price": "N/A",
     "url": "SWSH1_201",

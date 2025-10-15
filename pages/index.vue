@@ -69,7 +69,7 @@
                     "pageNumber": 1,
                     "items": 0,
                     "layout": [3, 2],
-                    "filter": "all",
+                    "filter": "pokemon",
                     "searchFilter": ""
                 }
             },
