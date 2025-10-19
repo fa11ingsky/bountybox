@@ -1,69 +1,69 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <form class="nosubmit">
-                <input class="nosubmit" type="search" v-model="searchFilter" placeholder="Search">
-            </form>
-            <div class="col-md-12">
-                <div class="product-filters">
-                    <ul>
-                        <li :class="filter == 'all' ? 'active' : ''" @click="filter = 'all'; pageNumber = 1">All</li>
-                        <li :class="filter == 'pokemon' ? 'active' : ''" @click="filter = 'pokemon'; pageNumber = 1">
-                            Pokemon
-                        </li>
-                        <li :class="filter == 'mats' ? 'active' : ''" @click="filter = 'mats'; pageNumber = 1">Mats</li>
-                        <li :class="filter == 'comics' ? 'active' : ''" @click="filter = 'comics'; pageNumber = 1">
-                            Comics</li>
-                    </ul>
-                </div>
+<div>
+    <div class="row">
+        <form class="nosubmit">
+            <input class="nosubmit" type="search" v-model="searchFilter" placeholder="Search">
+        </form>
+        <div class="col-md-12">
+            <div class="product-filters">
+                <ul>
+                    <li :class="filter == 'all' ? 'active' : ''" @click="filter = 'all'; pageNumber = 1">All</li>
+                    <li :class="filter == 'pokemon' ? 'active' : ''" @click="filter = 'pokemon'; pageNumber = 1">
+                        Pokemon
+                    </li>
+                    <li :class="filter == 'mats' ? 'active' : ''" @click="filter = 'mats'; pageNumber = 1">Mats</li>
+                    <li :class="filter == 'comics' ? 'active' : ''" @click="filter = 'comics'; pageNumber = 1">
+                        Comics</li>
+                </ul>
             </div>
         </div>
-        <div v-for="chunk in chunks">
-            <div class="row product-row" v-if="pageNumber == chunk.pageNumber">
-                <div v-for="(data, product) in chunk" class="col-md-4 text-center cart-bottom product-width pokemon">
-                    <template v-if="product != 'pageNumber'">
-                        <div class="single-product-item">
-                            <!--<div v-if="data.stock==1" class="stock-banner">Only 1 left!</div>-->
-                            <div v-if="data.stock == 0" class="outofstock-banner">Out of Stock!</div>
-                            <div class="product-image">
-                                <router-link :to="'/info/' + data.url"><img
-                                        :src="`/img/products/${data.img}`" /></router-link>
-                            </div>
-                            <h3>{{ product }}</h3>
-                            <p class="product-price"> ${{ data.price }} </p>
-                            <a v-if="data.stock != 0" class="cart-btn" @click="addToCart(product)"><i
-                                    class="fas fa-shopping-cart"></i>Add to Cart</a>
-                            <a v-if="data.stock == 0" class="outofstock-btn">Out of Stock</a>
-                        </div>
-                    </template>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="pagination-wrap">
-                    <ul>
-                        <li><a @click="setPageNumber('prev')">Prev</a></li>
-                        <li><a :class="pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{ pageNumber >
-                            1 ?
-                            pageNumber - 1 : pageNumber }}</a></li>
-                        <li><a :class="(pageNumber != 1 && pageNumber != maxPage + 1) ? 'active' : ''"
-                                @click="setPageNumber('mid')">{{ pageNumber > 1 ? pageNumber : pageNumber + 1 }}</a>
-                        </li>
-                        <li><a @click="setPageNumber('last')">{{ pageNumber > 1 ? pageNumber + 1 : pageNumber + 2 }}</a>
-                        </li>
-                        <li><a @click="setPageNumber('next')">Next</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Notification Box -->
-        <transition name="fade">
-            <div v-if="showCartNotification" class="cart-notification">
-                Item added to cart
-            </div>
-        </transition>
     </div>
+    <div v-for="chunk in chunks">
+        <div class="row product-row" v-if="pageNumber == chunk.pageNumber">
+            <div v-for="(data, product) in chunk" class="col-md-4 text-center product-width">
+                <template v-if="product != 'pageNumber'">
+                    <div class="single-product-item">
+                        <!--<div v-if="data.stock==1" class="stock-banner">Only 1 left!</div>-->
+                        <div v-if="data.stock == 0" class="outofstock-banner">Out of Stock!</div>
+                        <div class="product-image">
+                            <router-link :to="'/info/' + data.url"><img
+                                    :src="`/img/products/${data.img}`" /></router-link>
+                        </div>
+                        <h3>{{ product }}</h3>
+                        <p class="product-price"> ${{ data.price }} </p>
+                        <a v-if="data.stock != 0" class="cart-btn" @click="addToCart(product)"><i
+                                class="fas fa-shopping-cart"></i>Add to Cart</a>
+                        <a v-if="data.stock == 0" class="outofstock-btn">Out of Stock</a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="pagination-wrap">
+                <ul>
+                    <li><a @click="setPageNumber('prev')">Prev</a></li>
+                    <li><a :class="pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{ pageNumber >
+                        1 ?
+                        pageNumber - 1 : pageNumber }}</a></li>
+                    <li><a :class="(pageNumber != 1 && pageNumber != maxPage + 1) ? 'active' : ''"
+                            @click="setPageNumber('mid')">{{ pageNumber > 1 ? pageNumber : pageNumber + 1 }}</a>
+                    </li>
+                    <li><a @click="setPageNumber('last')">{{ pageNumber > 1 ? pageNumber + 1 : pageNumber + 2 }}</a>
+                    </li>
+                    <li><a @click="setPageNumber('next')">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Notification Box -->
+    <transition name="fade">
+        <div v-if="showCartNotification" class="cart-notification">
+            Item added to cart
+        </div>
+    </transition>
+</div>
 </template>
 
 <script>
@@ -232,5 +232,128 @@ export default {
 .fade-enter,
 .fade-leave-to {
     opacity: 0;
+}
+
+.product-width {
+    max-width: 300px;
+}
+
+a.cart-btn {
+    border-radius: 50px;
+}
+
+.single-product-item h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    line-height: 2;
+}
+
+.single-product-item {
+    -webkit-box-shadow: 0 0 20px #e4e4e4;
+    box-shadow: 0 0 20px #e4e4e4;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    min-height: 100%;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.single-product-item {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.single-product-item:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+p.product-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+p.product-price span {
+    display: block;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.product-image {
+    padding: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+a.outofstock-btn {
+    background-color: lightslategray;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .product-width {
+        max-width: 125px;
+    }
+
+    .product-image {
+        padding: 3px;
+        padding-bottom: 0;
+    }
+
+    .product-image img {
+        margin-bottom: 5px;
+    }
+
+    .product-row {
+        margin: auto;
+        width: 100%;
+    }
+
+    .single-product-item h3 {
+        color: black;
+        font-size: 8px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding-top: 1px;
+        line-height: 2;
+    }
+
+    p.product-price {
+        font-size: 15px;
+    }
+
+    a.cart-btn {
+        padding: 5px 5px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    a.outofstock-btn {
+        padding: 5px 5px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
 }
 </style>

@@ -2,7 +2,9 @@
     <div class="CartContainer container">
         <div class="Header">
             <h3 class="Heading">Shopping Cart</h3>
-            <h5 class="Action" @click="clearCart()">Remove all</h5>
+            <a class="back-btn" href="/" title="Return to shopping"><i class="fas fa-arrow-left"></i> Continue
+                Shopping</a>
+
         </div>
 
         <div class="cartEntries">
@@ -16,17 +18,19 @@
                         <h3 class="title">{{ product }}</h3>
                     </div>
                     <div class="counter">
-                        <a class="mod-btn fa-solid fa-circle-plus" @click="modItem(product, 1)"></a>
-                        <div class="count">{{ cart[product] }}</div>
                         <a class="mod-btn fa-solid fa-circle-minus" @click="modItem(product, -1)"></a>
+                        <div class="count">{{ cart[product] }}</div>
+                        <a class="mod-btn fa-solid fa-circle-plus" @click="modItem(product, 1)"></a>
                     </div>
                     <div class="prices">
-                        <div class="amount">{{ inventory[product].price * cart[product] }}</div>
+                        <div class="amount">${{ inventory[product].price * cart[product] }}</div>
                         <div class="remove" @click="modItem(product, 0)"><u>Remove</u></div>
                     </div>
                 </template>
             </div>
         </div>
+        <div v-if="cartItems > 0"><i class="fas fa-trash clear-cart" @click="clearCart()"></i></div>
+        <br />
         <hr>
         <div class="shipping-est row">
             <div class="deliver-to col-sm-3">Ship to:</div>
@@ -204,5 +208,112 @@ export default {
     border: none;
     letter-spacing: 0.5px;
     text-align: center;
+}
+
+.back-btn {
+    display: block;
+    padding: 6px 12px;
+    background-color: #949494;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    transition: background 0.2s;
+    float: right;
+    font-size: 14px;
+}
+
+.clear-cart {
+    float: right;
+    color: rgb(180, 53, 53);
+    cursor: pointer;
+    margin-right: 70px;
+    font-size: 20px;
+}
+
+
+.image-box {
+    width: 15%;
+    text-align: center;
+}
+
+
+.checkout {
+    float: right;
+    margin-right: 5%;
+    width: 28%;
+}
+
+.about {
+    height: 100%;
+    width: 24%;
+}
+
+.title {
+    font-size: 16px;
+    color: #202020;
+}
+
+.Cart-Items {
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0 20px 0;
+}
+
+
+.shipping-est {
+    padding: 0 10% 0 10%;
+}
+
+.prices {
+    height: 100%;
+    text-align: right;
+}
+
+.amount {
+    padding-top: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #202020;
+}
+
+@media only screen and (max-width: 767px) {
+    .clear-cart {
+        float: right;
+        color: rgb(180, 53, 53);
+        cursor: pointer;
+        margin-right: 45px;
+        font-size: 20px;
+    }
+
+    .checkout {
+        float: none;
+        padding-top: 20px;
+        margin: auto;
+        width: 50%;
+    }
+
+    .CartContainer {
+        width: 100%;
+    }
+
+    .shipping-est {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .deliver-to {
+        text-align: left;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
 }
 </style>
