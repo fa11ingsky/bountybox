@@ -1,1 +1,0 @@
-import{e as s,y as n,b as v}from"./entry.3dcbab8f.js";const o=function(e){let a=s(),t=n();const l=v();e in a.value?a.value[e]+1<=l.value[e].stock&&(a.value[e]++,t.value+=1):(a.value[e]=1,t.value+=1)};export{o as a};
