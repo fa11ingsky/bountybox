@@ -153,16 +153,16 @@ export default {
                 content: "Now selling Pokemon Trading Card Game (TCG). Buy Singles to complete that collection or refine your competitive deck! Collectibles, art and boutique merchanise for the everyday ethusiast or the avid aficionado. We've got you covered! "
             }],
             script: [
-            {
-                src: "https://www.googletagmanager.com/gtag/js?id=G-RBKQ6Z3JE4"
-            },
-            {
-                children: `window.dataLayer = window.dataLayer || [];
+                {
+                    src: "https://www.googletagmanager.com/gtag/js?id=G-RBKQ6Z3JE4"
+                },
+                {
+                    children: `window.dataLayer = window.dataLayer || [];
                         function gtag() { dataLayer.push(arguments); }
                         gtag('js', new Date());
                         console.log('running')
                         gtag('config', 'G-RBKQ6Z3JE4');`
-            }]
+                }]
         }
     },
     data() {
@@ -181,4 +181,130 @@ export default {
 .view-section {
     margin-top: 20px;
 }
+
+.top-header-area .header-icons a:hover {
+    color: #000;
+}
+
+.sticky-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999 !important;
+}
+
+.header-icons {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* reduce space between the icon links */
+}
+
+.header-icons a {
+    margin: -10px;
+    padding: 0;
+}
+
+/* tighten spacing between the cart icon and its count */
+.cart-items {
+    position: absolute;
+    left: 26px;
+    top: 0px;
+    padding: 1px 4px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+
+.sticky-wrapper.is-sticky .top-header-area {
+    background-color: #42a1f5;
+    padding: 15px 0;
+}
+
+.top-header-area {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.breadcrumb-text p {
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.breadcrumb-text h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+.site-logo {
+    float: left;
+    max-width: 150px;
+    margin-top: -20px;
+}
+
+.breadcrumb-section {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 2;
+    background-attachment: fixed;
+    padding: 20px 0 20px;
+}
+
+.breadcrumb-section:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #42a1f5;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* smaller on phones */
+@media only screen and (max-width: 767px) {
+    .breadcrumb-text h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .breadcrumb-text p {
+        color: #000;
+        font-weight: 700;
+        letter-spacing: 4px;
+        font-size: 10px;
+    }
+
+    .site-logo {
+        position: absolute;
+        z-index: 99;
+    }
+}
+
+/* very small devices */
+@media (max-width: 380px) {
+    .breadcrumb-text h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .breadcrumb-text p {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+}
+
+
 </style>
