@@ -1,5 +1,5 @@
 <template>
-
+<div>
     <div class="row">
         <form class="nosubmit">
             <input class="nosubmit" type="search" v-model="searchFilter" placeholder="Search">
@@ -20,7 +20,7 @@
     </div>
     <div v-for="chunk in chunks">
         <div class="row product-row" v-if="pageNumber == chunk.pageNumber">
-            <div v-for="(data, product) in chunk" class="col-md-4 text-center cart-bottom product-width">
+            <div v-for="(data, product) in chunk" class="col-md-4 text-center product-width">
                 <template v-if="product != 'pageNumber'">
                     <div class="single-product-item">
                         <!--<div v-if="data.stock==1" class="stock-banner">Only 1 left!</div>-->
@@ -63,7 +63,7 @@
             Item added to cart
         </div>
     </transition>
-
+</div>
 </template>
 
 <script>
@@ -234,10 +234,6 @@ export default {
     opacity: 0;
 }
 
-.cart-bottom {
-    line-height: 1;
-}
-
 .product-width {
     max-width: 300px;
 }
@@ -328,7 +324,7 @@ a.outofstock-btn {
     }
 
     .product-row {
-        margin: 1px;
+        margin: auto;
         width: 100%;
     }
 
@@ -350,11 +346,13 @@ a.outofstock-btn {
     a.cart-btn {
         padding: 5px 5px;
         border-radius: 5px;
+        font-size: 12px;
     }
 
     a.outofstock-btn {
         padding: 5px 5px;
         border-radius: 5px;
+        font-size: 12px;
     }
 
 }
