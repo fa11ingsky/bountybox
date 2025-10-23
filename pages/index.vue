@@ -18,11 +18,11 @@
             </div>
         </div>
     </div>
-    <div v-for="chunk in chunks">
-        <div class="row product-row" v-if="pageNumber == chunk.pageNumber">
-            <div v-for="(data, product) in chunk" class="col-md-4 text-center product-width">
+    <template v-for="chunk in chunks">
+        <div class="row product-row " v-if="pageNumber == chunk.pageNumber" >
+            <template v-for="(data, product) in chunk" >
                 <template v-if="product != 'pageNumber'">
-                    <div class="single-product-item">
+                    <div class="single-product-item col text-center product-width">
                         <!--<div v-if="data.stock==1" class="stock-banner">Only 1 left!</div>-->
                         <div v-if="data.stock == 0" class="outofstock-banner">Out of Stock!</div>
                         <div class="product-image">
@@ -36,11 +36,11 @@
                         <a v-if="data.stock == 0" class="outofstock-btn">Out of Stock</a>
                     </div>
                 </template>
-            </div>
+            </template>
         </div>
-    </div>
+    </template>
     <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col text-center">
             <div class="pagination-wrap">
                 <ul>
                     <li><a @click="setPageNumber('prev')">Prev</a></li>
@@ -83,7 +83,7 @@ export default {
         return {
             "pageNumber": 1,
             "items": 0,
-            "layout": [3, 2],
+            "layout": [4, 2],
             "filter": "pokemon",
             "searchFilter": "",
             "showCartNotification": false
@@ -224,6 +224,12 @@ export default {
     }
 }
 
+.product-row {
+    margin: auto;
+    width: 50%;
+}
+
+
 .fade-enter-active,
 .fade-leave-active {
     transition: opacity 0.4s;
@@ -308,6 +314,11 @@ a.outofstock-btn {
     border-radius: 50px;
 }
 
+@media only screen and (max-width: 1440px) and (min-width: 767px){
+    .product-row {
+        width: 90%;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .product-width {
@@ -325,7 +336,7 @@ a.outofstock-btn {
 
     .product-row {
         margin: auto;
-        width: 100%;
+        width: 90%;
     }
 
     .single-product-item h3 {
