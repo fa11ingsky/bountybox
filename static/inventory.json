@@ -2309,5 +2309,64 @@
       "pokemon"
     ],
     "stock": 0
+  },
+  "Glory Team Rocket Booster Pack (Japanese)": {
+    "img": "glory_team_rocket_booster.png",
+    "price": "10",
+    "url": "glory_team_rocket_booster",
+    "description": "Japanese Pokemon TCG booster pack from the Glory of Team Rocket set. Contains 5 random cards.",
+    "tags": [
+      "pokemon",
+      "booster pack",
+      "japanese",
+      "rivals"
+    ],
+    "stock": 2
+  },
+  "Night Wanderer Booster Pack (Japanese)": {
+    "img": "night_wanderer_booster.png",
+    "price": "10",
+    "url": "night_wanderer_booster",
+    "description": "Japanese Pokemon TCG booster pack from the Night Wanderer set. Contains 5 random cards.",
+    "tags": [
+      "pokemon",
+      "booster pack",
+      "japanese"
+    ],
+    "stock": 2
+  },
+  "Pokemon TCG: Sword and Shield - Silver Tempest Booster Box ": {
+    "img": "swsh12-silver-tempest-booster-box.png",
+    "price": "450",
+    "url": "swsh12-silver-tempest-booster-box",
+    "description": "Pokemon TCG booster box from the Silver Tempest set. Contains 36 booster packs, each with 10 random cards.",
+    "tags": [
+      "pokemon",
+      "booster pack",
+      "swsh12"
+    ],
+    "stock": 1
+  },
+  "Empoleon Ex (Japanese)  (M2 099)": {
+    "img": "M2_JP_99.png",
+    "price": "30",
+    "url": "M2_JP_99",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon",
+      "m2"
+    ],
+    "stock": 1
+  },
+  "Wigglytuff (Japanese)  (M2 091)": {
+    "img": "M2_JP_91.png",
+    "price": "30",
+    "url": "M2_JP_91",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon",
+      "m2"
+    ],
+    "stock": 1
   }
 }

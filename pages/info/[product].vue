@@ -1,6 +1,6 @@
 <template>
     <div class="mb-150">
-        <div class="container">
+        <div class="container spacing">
             <div class="row">
                 <div class="col-md-5">
                     <!--<div v-if="inventory[product].stock==1" class="stock-banner">Only 1 left!</div>-->
@@ -65,6 +65,10 @@ export default {
 }
 </script>
 <style scoped>
+.spacing {
+    margin-top: 50px;
+}
+
 .single-product-img img {
     padding-left: 20px;
     border-radius: 5px;

@@ -42,7 +42,7 @@
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <nuxt-link to="/" class="breadcrumb-text">
                         <h1>Bounty Box</h1>
-                        <p>an ArmourScope affliate</p>
+                        <p>Collectibles and More</p>
                     </nuxt-link>
                 </div>
             </div>
@@ -178,9 +178,6 @@ export default {
 </script>
 
 <style>
-.view-section {
-    margin-top: 20px;
-}
 
 .top-header-area .header-icons a:hover {
     color: #000;
