@@ -1,5 +1,7 @@
 <template>
 <div>
+    <FeaturedBanner :products="inventory" @update-filter="filter = $event" />
+
     <div class="row">
         <form class="nosubmit">
             <input class="nosubmit" type="search" v-model="searchFilter" placeholder="Search">
@@ -68,6 +70,7 @@
 
 <script>
 export default {
+    
     name: "Products",
     setup() {
         const inventory = getInventory()
@@ -91,6 +94,7 @@ export default {
     },
     watch: {
         cart: {
+            // Whenever cart changes, show notification for 'item added to cart'
             handler(newCart, oldCart) {
                 if (Object.keys(newCart).length > 0) {
                     this.showCartNotification = true
@@ -164,6 +168,10 @@ export default {
         },
         btoa: function (s) {
             return btoa(s)
+        },
+        filterByTag(tag) {
+            this.filter = tag
+            this.pageNumber = 1
         }
     }
 }
