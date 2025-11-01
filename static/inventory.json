@@ -2348,7 +2348,7 @@
     "stock": 1
   },
   "Empoleon Ex (Japanese)  (M2 099)": {
-    "img": "M2_JP_99.png",
+    "img": "M2_JP_99.jpeg",
     "price": "30",
     "url": "M2_JP_99",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
@@ -2359,7 +2359,7 @@
     "stock": 1
   },
   "Wigglytuff (Japanese)  (M2 091)": {
-    "img": "M2_JP_91.png",
+    "img": "M2_JP_91.jpeg",
     "price": "30",
     "url": "M2_JP_91",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
@@ -2368,5 +2368,16 @@
       "m2"
     ],
     "stock": 1
+  },
+  "Mega Charizard Ex (Japanese)  (M2 013)": {
+    "img": "M2_JP_013.jpeg",
+    "price": "80",
+    "url": "M2_JP_013",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon",
+      "m2"
+    ],
+    "stock": 0
   }
 }
