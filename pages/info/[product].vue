@@ -1,6 +1,7 @@
 <template>
     <div class="mb-150">
-        <div class="container spacing">
+        <div class="container ">
+            <div class="row spacing"></div>
             <div class="row">
                 <div class="col-md-5">
                     <!--<div v-if="inventory[product].stock==1" class="stock-banner">Only 1 left!</div>-->
@@ -14,13 +15,19 @@
                         <h3>{{ product }}</h3>
                         <p class="single-product-pricing">${{ inventory[product].price }}</p>
                         <p>{{ inventory[product].description }}</p>
-                        <div class="single-product-form">
-                            <nuxt-link v-if="inventory[product].stock != 0" to="/checkout" class="cart-btn"
-                                @click="addToCart(product)"><i class="fas fa-shopping-cart"></i> Add to Cart</nuxt-link>
-                            <nuxt-link to="/" class="back-btn">
-                                <i class="fas fa-arrow-left"></i> Back
-                            </nuxt-link>
-                            <a v-if="inventory[product].stock == 0" class="outofstock-btn">Out of Stock</a>
+                        <div class="single-product-form row">
+                            <div class="col">
+                                <nuxt-link v-if="inventory[product].stock != 0" to="/checkout" class="cart-btn"
+                                    @click="addToCart(product)"><i class="fas fa-shopping-cart"></i> Add to
+                                    Cart</nuxt-link>
+                                <a v-if="inventory[product].stock == 0" class="outofstock-btn">Out of Stock</a>
+                            </div>
+                            <div class="col text-end">
+                                <nuxt-link to="/" class="back-btn">
+                                    <i class="fas fa-arrow-left"></i> Back
+                                </nuxt-link>
+                            </div>
+                            
                             <p><strong>Tags: </strong>{{ productTags(product) }}</p>
                         </div>
                     </div>
@@ -66,7 +73,7 @@ export default {
 </script>
 <style scoped>
 .spacing {
-    margin-top: 50px;
+    height: 20px;
 }
 
 .single-product-img img {
@@ -124,7 +131,6 @@ export default {
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
     transition: background 0.2s;
-    margin-left: 50px;
 }
 
 .outofstock-btn {
@@ -168,9 +174,9 @@ export default {
         margin-bottom: 30px;
     }
 
-        .single-product-img img {
-            width: 100%;
-        }
+    .single-product-img img {
+        width: 100%;
+    }
 
     .single-project-img img {
         width: 100%;

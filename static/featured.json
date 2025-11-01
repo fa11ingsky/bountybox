@@ -9,15 +9,15 @@
         "tag": "swsh12"
     },
     {
-        "img_small": "featured/m2-promo.png",
-        "img_large": "featured/m2-promo.png",       
+        "img_small": "featured/m2-promo2.png",
+        "img_large": "featured/m2-promo2.png",       
         "title": "Pokemon TCG: Inferno X available now!",
         "description": "Japanese Pokemon TCG booster pack from the Night Wanderer set. Contains 5 random cards.",
         "tag": "m2"
     },
     {
-        "img_small": "featured/rivals-promo.png",
-        "img_large": "featured/rivals-promo-large.png",
+        "img_small": "featured/rivals-promo2.png",
+        "img_large": "featured/rivals-promo2.png",
         "price": "10",
         "url": "night_wanderer_booster",
         "title": "Pokemon TCG: Glory of Team Rocket available!",

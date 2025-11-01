@@ -102,7 +102,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .featured-banner {
-  height: 33vh;
+  height: 500px;
   min-height: 240px;
   width: 100%;
   position: relative;
@@ -214,6 +214,9 @@ onBeforeUnmount(() => {
 
 /* Small screens tweaks */
 @media (max-width: 640px) {
+  .featured-banner {
+    height: 33vh;
+  }
 
   .cta {
     padding: 6px 10px;
