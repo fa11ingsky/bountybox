@@ -6,9 +6,9 @@
                 <div class="col-lg-12 col-sm-12 text-center">
                     <div class="main-menu-wrap">
                         <!-- logo -->
-                        <div class="site-logo">
-                            <nuxt-link to="/"><img src="/img/armourscope-title.png" alt=""></nuxt-link>
-                        </div>
+                        <!-- <div class="site-logo">
+                            <nuxt-link to="/"><img src="/img/armourscope-title3.png" alt=""></nuxt-link>
+                        </div> -->
                         <!-- logo -->
                         <!-- menu start -->
                         <nav class="main-menu">
@@ -36,17 +36,10 @@
     </div>
     <!-- end header -->
     <!-- breadcrumb-section (title area) -->
-    <div class="breadcrumb-section breadcrumb-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <nuxt-link to="/" class="breadcrumb-text">
-                        <h1>Bounty Box</h1>
-                        <p>Collectibles and More</p>
-                    </nuxt-link>
-                </div>
-            </div>
-        </div>
+    <div class="breadcrumb-section text-center site-logo">
+        <nuxt-link to="/" class="breadcrumb-text">
+            <img src="/img/armourscope-title3.png" alt="">
+        </nuxt-link>
     </div>
     <!-- end breadcrumb section -->
     <!-- products -->
@@ -70,14 +63,13 @@
                 <div class="col-lg-6 text-center">
                     <div class="footer-box about-widget">
                         <h2 class="widget-title">About us</h2>
-                        <p>Bounty Box is an ArmourScope affiliate.</p>
+                        <p>ArmourScope is an Australian provider of collectible trading cards and merchandise.</p>
                         <p>Registered ABN 40136037247.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center">
                     <div class="footer-box get-in-touch">
                         <h2 class="widget-title">Get in touch</h2>
-                        <p>Canberra, ACT, Australia</p>
                         <p>contact.armourscope@gmail.com</p>
                     </div>
                 </div>
@@ -100,7 +92,7 @@
                     </div>
                     -->
                     <div class="text-center">
-                        <p>Copyrights &copy; 2022 - <a href="https://www.armourscope.com/">ArmourScope</a>, All Rights
+                        <p>Copyrights &copy; 2025 - <a href="https://www.armourscope.com/">ArmourScope</a>, All Rights
                             Reserved.</p>
                     </div>
                 </div>
@@ -143,7 +135,7 @@ export default {
     },
     head() {
         return {
-            title: 'Bounty Box: Collectibles and More',
+            title: 'ArmourScope: Collectibles and More',
             link: [{
                 rel: "icon",
                 href: "/img/favicon.png"
@@ -178,9 +170,23 @@ export default {
 </script>
 
 <style>
-
 .top-header-area .header-icons a:hover {
     color: #000;
+}
+
+.site-logo a img {
+    max-width: 300px;
+}
+
+.site-logo {
+    text-align: center;
+    position: absolute;
+    float: left;
+    margin-top: -20px;
+}
+
+.site-logo img {
+    max-width: 150px;
 }
 
 .sticky-wrapper {
@@ -195,7 +201,8 @@ export default {
     color: #fff;
     display: flex;
     align-items: center;
-    gap: 6px; /* reduce space between the icon links */
+    gap: 6px;
+    /* reduce space between the icon links */
 }
 
 .header-icons a {
@@ -216,7 +223,7 @@ export default {
 
 
 .sticky-wrapper.is-sticky .top-header-area {
-    background-color: #42a1f5;
+    background-color: #0b4980;
     padding: 15px 0;
 }
 
@@ -227,35 +234,16 @@ export default {
     padding: 25px 0;
 }
 
-.breadcrumb-text p {
-    color: #000;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-}
-
-.breadcrumb-text h1 {
-    font-size: 50px;
-    font-weight: 900;
-    color: #fff;
-    margin: 0;
-    margin-top: 20px;
-}
-
-
-.site-logo {
-    float: left;
-    max-width: 150px;
-    margin-top: -20px;
-}
-
 .breadcrumb-section {
+    width: 100%;
     background-size: cover;
     background-position: center center;
     position: relative;
     z-index: 2;
-    background-attachment: fixed;
-    padding: 20px 0 20px;
+    background-attachment: fixed; 
+    /* background-color: #42a1f5; */
+    background-color: #0b4980;      
+    padding: 20px 0px 0px 0px;
 }
 
 .breadcrumb-section:after {
@@ -265,43 +253,72 @@ export default {
     width: 100%;
     height: 100%;
     content: "";
-    background-color: #42a1f5;
     z-index: -1;
     opacity: 0.8;
 }
 
+.footer-area {
+    background-color: #0b4980;
+    color: #000;
+    padding: 40px 0;
+}
+
+.copyright {
+    background-color: #0b4980;
+}
+
+.copyright p {
+    margin: 0;
+    color: #000;
+    opacity: 0.7;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.copyright a {
+    color: #000;
+    font-weight: 700;
+}
+
+.copyright a:hover {
+    color: #f59d53;
+}
+
+h2.widget-title {
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 0px;
+    color: #000;
+}
+
+h2.widget-title:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+}
+
 /* smaller on phones */
 @media only screen and (max-width: 767px) {
-    .breadcrumb-text h1 {
-        font-size: 28px;
-        margin-top: 20px;
-    }
 
-    .breadcrumb-text p {
-        color: #000;
-        font-weight: 700;
-        letter-spacing: 4px;
-        font-size: 10px;
-    }
+    .site-logo img {
+        max-width: 120px;
+        max-height: 80px;
+        margin-right: 45%;
+    }   
 
-    .site-logo {
-        position: absolute;
-        z-index: 99;
-    }
 }
 
 /* very small devices */
 @media (max-width: 380px) {
-    .breadcrumb-text h1 {
-        font-size: 24px;
-        margin-top: 20px;
-    }
-
-    .breadcrumb-text p {
-        font-size: 12px;
-        margin-top: 0px;
-    }
+    
 }
 
-
+/* debug outline */
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
 </style>

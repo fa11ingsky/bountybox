@@ -16,7 +16,7 @@ body {
     font-size: 1rem;
     letter-spacing: 0.1px;
     line-height: 1.8;
-    color: #42a1f5;
+    color: #0b4980;
     overflow-x: hidden;
 }
 
@@ -172,7 +172,6 @@ p {
     font-size: 1rem;
     letter-spacing: 0.1px;
     line-height: 1.8;
-    color: #42a1f5;
     margin: 0 0 1.25rem 0;
 }
 
@@ -533,11 +532,6 @@ a.read-more-btn:hover {
 # Header Styles
 
 ----------------------------------------------------------------------------- */
-ul.navbar-nav li.nav-item a.nav-link,
-ul.navbar-nav li.nav-item.active a.nav-link {
-    color: #42a1f5;
-}
-
 
 
 ul.navbar-nav li.nav-item a.nav-link,
@@ -828,28 +822,9 @@ a.mobile-show {
     padding: 20px 0;
 }
 
-.footer-area {
-    background-color: #42a1f5;
-    color: #000;
-    padding: 40px 0;
-}
 
-h2.widget-title {
-    font-size: 30px;
-    position: relative;
-    padding-bottom: 0px;
-    color: #000;
-}
 
-h2.widget-title:after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 20px;
-    height: 2px;
-    background-color: #42a1f5;
-    content: "";
-}
+
 
 .footer-box p {
     color: #000;
@@ -899,26 +874,7 @@ h2.widget-title:after {
     outline: none;
 }
 
-.copyright {
-    background-color: #42a1f5;
-}
 
-.copyright p {
-    margin: 0;
-    color: #000;
-    opacity: 0.7;
-    padding: 5px 0;
-    font-size: 15px;
-}
-
-.copyright a {
-    color: #000;
-    font-weight: 700;
-}
-
-.copyright a:hover {
-    color: #f59d53;
-}
 
 .social-icons ul {
     margin: 0;
@@ -1149,7 +1105,6 @@ input[type="search"] {
     background: transparent;
     padding: 5px 5px 5px 5px;
     font-size: 16px;
-    color: inherit;
     border: 1px solid transparent;
     text-align: center;
 }
@@ -1265,10 +1220,6 @@ a.cart-btn {
 
 
 
-a.cart-btn:hover {
-    background-color: #42a1f5;
-    color: #000;
-}
 
 .recent-posts ul li {
     -webkit-transition: 0.3s;
@@ -2440,17 +2391,7 @@ a.cart-btn i {
     border-radius: 3px;
 }
 
-.outofstock-banner {
-    z-index: 4;
-    margin-top: 80px;
-    position: absolute;
-    background-color: lightslategray;
-    font-family: sans-serif;
-    color: white;
-    font-weight: 700;
-    padding: 4px 5px 3px 3px;
-    border-radius: 3px;
-}
+
 
 
 

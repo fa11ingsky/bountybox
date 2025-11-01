@@ -1,76 +1,88 @@
 <template>
-<div>
-    <FeaturedBanner :products="inventory" @update-filter="filter = $event" />
-
-    <div class="row">
-        <form class="nosubmit">
-            <input class="nosubmit" type="search" v-model="searchFilter" placeholder="Search">
-        </form>
-        <div class="col-md-12">
-            <div class="product-filters">
-                <ul>
-                    <li :class="filter == 'all' ? 'active' : ''" @click="filter = 'all'; pageNumber = 1">All</li>
-                    <li :class="filter == 'pokemon' ? 'active' : ''" @click="filter = 'pokemon'; pageNumber = 1">
-                        Pokemon
-                    </li>
-                    <li :class="filter == 'mats' ? 'active' : ''" @click="filter = 'mats'; pageNumber = 1">Mats</li>
-                    <li :class="filter == 'comics' ? 'active' : ''" @click="filter = 'comics'; pageNumber = 1">
-                        Comics</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <template v-for="chunk in chunks">
-        <div class="row product-row " v-if="pageNumber == chunk.pageNumber" >
-            <template v-for="(data, product) in chunk" >
-                <template v-if="product != 'pageNumber'">
-                    <div class="single-product-item col text-center product-width">
-                        <!--<div v-if="data.stock==1" class="stock-banner">Only 1 left!</div>-->
-                        <div v-if="data.stock == 0" class="outofstock-banner">Out of Stock!</div>
-                        <div class="product-image">
-                            <router-link :to="'/info/' + data.url"><img
-                                    :src="`/img/products/${data.img}`" /></router-link>
-                        </div>
-                        <h3>{{ product }}</h3>
-                        <p class="product-price"> ${{ data.price }} </p>
-                        <a v-if="data.stock != 0" class="cart-btn" @click="addToCart(product)"><i
-                                class="fas fa-shopping-cart"></i>Add to Cart</a>
-                        <a v-if="data.stock == 0" class="outofstock-btn">Out of Stock</a>
+    <div>
+        <FeaturedBanner :products="inventory" @update-filter="filter = $event" />
+        <div class="container">
+            <div class="row">
+                <form class="nosubmit">
+                    <input class="nosubmit" type="search" v-model="searchFilter" placeholder="Search">
+                </form>
+                <div class="col-md-12">
+                    <div class="product-filters">
+                        <ul>
+                            <li :class="filter == 'all' ? 'active' : ''" @click="filter = 'all'; pageNumber = 1">All
+                            </li>
+                            <li :class="filter == 'pokemon' ? 'active' : ''"
+                                @click="filter = 'pokemon'; pageNumber = 1">
+                                Pokemon
+                            </li>
+                            <li :class="filter == 'mats' ? 'active' : ''" @click="filter = 'mats'; pageNumber = 1">Mats
+                            </li>
+                            <li :class="filter == 'comics' ? 'active' : ''" @click="filter = 'comics'; pageNumber = 1">
+                                Comics</li>
+                        </ul>
                     </div>
-                </template>
+                </div>
+            </div>
+            <template v-for="chunk in chunks">
+                <div class="row product-row " v-if="pageNumber == chunk.pageNumber">
+                    <template v-for="(data, product) in chunk">
+                        <template v-if="product != 'pageNumber'">
+                            <div class="single-product-item col-3 text-center product-width">
+                                <!--<div v-if="data.stock==1" class="stock-banner">Only 1 left!</div>-->
+                                <div v-if="data.stock == 0" class="outofstock-banner">Out of Stock!</div>
+                                <div class="product-image">
+                                    <router-link :to="'/info/' + data.url"><img
+                                            :src="`/img/products/${data.img}`" /></router-link>
+                                </div>
+                                <div class="container" style="height:100%;">
+                                    <div class="row product-info">
+                                        <h3>{{ product }}</h3>
+                                    </div>
+                                    <div class="row ">
+                                        <p class="product-price"> ${{ data.price }} </p>
+                                        <a v-if="data.stock != 0" class="cart-btn" @click="addToCart(product)"><i
+                                                class="fas fa-shopping-cart"></i>Add to Cart</a>
+                                        <a v-if="data.stock == 0" class="outofstock-btn">Out of Stock</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+                </div>
             </template>
-        </div>
-    </template>
-    <div class="row">
-        <div class="col text-center">
-            <div class="pagination-wrap">
-                <ul>
-                    <li><a @click="setPageNumber('prev')">Prev</a></li>
-                    <li><a :class="pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{ pageNumber >
-                        1 ?
-                        pageNumber - 1 : pageNumber }}</a></li>
-                    <li><a :class="(pageNumber != 1 && pageNumber != maxPage + 1) ? 'active' : ''"
-                            @click="setPageNumber('mid')">{{ pageNumber > 1 ? pageNumber : pageNumber + 1 }}</a>
-                    </li>
-                    <li><a @click="setPageNumber('last')">{{ pageNumber > 1 ? pageNumber + 1 : pageNumber + 2 }}</a>
-                    </li>
-                    <li><a @click="setPageNumber('next')">Next</a></li>
-                </ul>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="pagination-wrap">
+                        <ul>
+                            <li><a @click="setPageNumber('prev')">Prev</a></li>
+                            <li><a :class="pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{
+                                pageNumber >
+                                    1 ?
+                                    pageNumber - 1 : pageNumber }}</a></li>
+                            <li><a :class="(pageNumber != 1 && pageNumber != maxPage + 1) ? 'active' : ''"
+                                    @click="setPageNumber('mid')">{{ pageNumber > 1 ? pageNumber : pageNumber + 1 }}</a>
+                            </li>
+                            <li><a @click="setPageNumber('last')">{{ pageNumber > 1 ? pageNumber + 1 : pageNumber + 2
+                            }}</a>
+                            </li>
+                            <li><a @click="setPageNumber('next')">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Notification Box -->
+        <transition name="fade">
+            <div v-if="showCartNotification" class="cart-notification">
+                Item added to cart
+            </div>
+        </transition>
     </div>
-    <!-- Notification Box -->
-    <transition name="fade">
-        <div v-if="showCartNotification" class="cart-notification">
-            Item added to cart
-        </div>
-    </transition>
-</div>
 </template>
 
 <script>
 export default {
-    
+
     name: "Products",
     setup() {
         const inventory = getInventory()
@@ -232,10 +244,6 @@ export default {
     }
 }
 
-.product-row {
-    margin: auto;
-    width: 50%;
-}
 
 
 .fade-enter-active,
@@ -249,7 +257,12 @@ export default {
 }
 
 .product-width {
-    max-width: 300px;
+    max-width: 320px;
+}
+
+.product-info {
+    height: 120px;
+    margin: 0px -20px 0px -20px;
 }
 
 a.cart-btn {
@@ -260,9 +273,6 @@ a.cart-btn {
     color: black;
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
     padding-top: 10px;
     line-height: 2;
 }
@@ -270,19 +280,17 @@ a.cart-btn {
 .single-product-item {
     -webkit-box-shadow: 0 0 20px #e4e4e4;
     box-shadow: 0 0 20px #e4e4e4;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px 15px 10px 15px;
     border-radius: 5px;
     min-height: 100%;
     line-height: 1;
     margin-bottom: 10px;
-}
-
-.single-product-item {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+
 }
+
 
 .single-product-item:hover {
     -webkit-box-shadow: none;
@@ -290,6 +298,7 @@ a.cart-btn {
 }
 
 p.product-price {
+    color: #0b4980;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -304,13 +313,8 @@ p.product-price span {
 }
 
 .product-image {
-    padding: 20px;
-}
-
-.product-image img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 30px;
+    height: 360px;
+    overflow: hidden;
 }
 
 a.outofstock-btn {
@@ -322,25 +326,34 @@ a.outofstock-btn {
     border-radius: 50px;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 767px){
-    .product-row {
-        width: 90%;
-    }
+.outofstock-banner {
+    z-index: 4;
+    margin-top: 80px;
+    position: absolute;
+    background-color: lightslategray;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 700;
+    padding: 4px 5px 3px 3px;
+    border-radius: 3px;
 }
 
 @media only screen and (max-width: 767px) {
     .product-width {
         max-width: 125px;
+        max-height: 100%;
+    }
+
+    .product-info {
+        height: 70px;
     }
 
     .product-image {
         padding: 3px;
-        padding-bottom: 0;
+        max-height: 120px;
+        overflow: hidden;
     }
 
-    .product-image img {
-        margin-bottom: 5px;
-    }
 
     .product-row {
         margin: auto;
@@ -351,11 +364,11 @@ a.outofstock-btn {
         color: black;
         font-size: 8px;
         font-weight: 700;
-        margin-bottom: 0px;
-        margin-left: 2px;
-        margin-right: 2px;
-        padding-top: 1px;
         line-height: 2;
+    }
+
+    .single-product-item {
+        padding: 10px 4px 10px 4px;
     }
 
     p.product-price {

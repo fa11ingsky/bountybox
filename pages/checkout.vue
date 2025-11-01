@@ -1,5 +1,6 @@
 <template>
     <div class="CartContainer container">
+        <div class="row spacing"></div>
         <div class="Header">
             <h3 class="Heading">Shopping Cart</h3>
             <a class="back-btn" href="/" title="Return to shopping"><i class="fas fa-arrow-left"></i> Continue
@@ -186,7 +187,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.spacing {
+    height: 20px;
+}
+
 .mod-btn {
     color: black;
 }
