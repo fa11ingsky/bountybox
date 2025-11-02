@@ -1,0 +1,1 @@
+import{e as s,D as n,b as v}from"./entry.47a2819d.js";const o=function(e){let a=s(),t=n();const l=v();e in a.value?a.value[e]+1<=l.value[e].stock&&(a.value[e]++,t.value+=1):(a.value[e]=1,t.value+=1)};export{o as a};
