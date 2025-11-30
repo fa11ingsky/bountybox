@@ -92,7 +92,6 @@ function slideStyle(product) {
 
 onMounted(() => {
   startAuto();
-  console.log('FeaturedBanner mounted with products:', featured);
 });
 
 onBeforeUnmount(() => {

@@ -1,30 +1,33 @@
 <template>
     <div>
-        <FeaturedBanner :products="inventory" @update-filter="filter = $event" />
+        <FeaturedBanner v-if="!state.inSearch" :products="inventory" @update-filter="state.filter = $event" />
+        <CategoryBanner v-if="state.inSearch" @toggleSearch="state.inSearch = !state.inSearch"/>
         <div class="container">
-            <div class="row">
-                <form class="nosubmit">
-                    <input class="nosubmit" type="search" v-model="searchFilter" placeholder="Search">
-                </form>
+            <div class="row w-200 justify-content-center">
+                <div class="col-md-8 d-flex align-items-center">
+                    <a><i class="fas fa-bars fa-lg text-dark" @click="state.inSearch=!state.inSearch"></i></a>
+                    <input class="nosubmit" type="search" v-model="state.searchFilter" placeholder="Search">
+                </div>
+
                 <div class="col-md-12">
                     <div class="product-filters">
                         <ul>
-                            <li :class="filter == 'all' ? 'active' : ''" @click="filter = 'all'; pageNumber = 1">All
+                            <li :class="state.filter == 'all' ? 'active' : ''" @click="filterByTag('all')">All
                             </li>
-                            <li :class="filter == 'pokemon' ? 'active' : ''"
-                                @click="filter = 'pokemon'; pageNumber = 1">
+                            <li :class="state.filter == 'pokemon' ? 'active' : ''" @click="filterByTag('pokemon')">
                                 Pokemon
                             </li>
-                            <li :class="filter == 'mats' ? 'active' : ''" @click="filter = 'mats'; pageNumber = 1">Mats
+                            <li :class="state.filter == 'mats' ? 'active' : ''" @click="filterByTag('mats')">
+                                Mats
                             </li>
-                            <li :class="filter == 'comics' ? 'active' : ''" @click="filter = 'comics'; pageNumber = 1">
+                            <li :class="state.filter == 'comics' ? 'active' : ''" @click="filterByTag('comics')">
                                 Comics</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <template v-for="chunk in chunks">
-                <div class="row product-row " v-if="pageNumber == chunk.pageNumber">
+                <div class="row product-row " v-if="state.pageNumber == chunk.pageNumber">
                     <template v-for="(data, product) in chunk">
                         <template v-if="product != 'pageNumber'">
                             <div class="single-product-item col-3 text-center product-width">
@@ -55,15 +58,15 @@
                     <div class="pagination-wrap">
                         <ul>
                             <li><a @click="setPageNumber('prev')">Prev</a></li>
-                            <li><a :class="pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{
-                                pageNumber >
+                            <li><a :class="state.pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{
+                                state.pageNumber >
                                     1 ?
-                                    pageNumber - 1 : pageNumber }}</a></li>
-                            <li><a :class="(pageNumber != 1 && pageNumber != maxPage + 1) ? 'active' : ''"
-                                    @click="setPageNumber('mid')">{{ pageNumber > 1 ? pageNumber : pageNumber + 1 }}</a>
+                                    state.pageNumber - 1 : state.pageNumber }}</a></li>
+                            <li><a :class="(state.pageNumber != 1 && state.pageNumber != maxPage + 1) ? 'active' : ''"
+                                    @click="setPageNumber('mid')">{{ state.pageNumber > 1 ? state.pageNumber : state.pageNumber + 1 }}</a>
                             </li>
-                            <li><a @click="setPageNumber('last')">{{ pageNumber > 1 ? pageNumber + 1 : pageNumber + 2
-                            }}</a>
+                            <li><a @click="setPageNumber('last')">{{ state.pageNumber > 1 ? state.pageNumber + 1 : state.pageNumber + 2
+                                    }}</a>
                             </li>
                             <li><a @click="setPageNumber('next')">Next</a></li>
                         </ul>
@@ -73,123 +76,107 @@
         </div>
         <!-- Notification Box -->
         <transition name="fade">
-            <div v-if="showCartNotification" class="cart-notification">
+            <div v-if="state.showCartNotification" class="cart-notification">
                 Item added to cart
             </div>
         </transition>
     </div>
 </template>
 
-<script>
-export default {
+<script setup>
+import { computed, reactive, watch } from 'vue';
 
-    name: "Products",
-    setup() {
-        const inventory = getInventory()
-        let cart = getCart()
+// Existing Functions from store/inventory.js
+const inventory = getInventory();
+console.log(inventory)
+const cart = getCart();
 
-        return {
-            inventory,
-            cart
+// Reactive State
+const state = reactive({
+    pageNumber: 1,
+    items: 0,
+    layout: [4, 2],
+    filter: 'pokemon',
+    searchFilter: '',
+    showCartNotification: false,
+    inSearch: false
+});
 
-        }
-    },
-    data() {
-        return {
-            "pageNumber": 1,
-            "items": 0,
-            "layout": [4, 2],
-            "filter": "pokemon",
-            "searchFilter": "",
-            "showCartNotification": false
-        }
-    },
-    watch: {
-        cart: {
-            // Whenever cart changes, show notification for 'item added to cart'
-            handler(newCart, oldCart) {
-                if (Object.keys(newCart).length > 0) {
-                    this.showCartNotification = true
-                    setTimeout(() => {
-                        this.showCartNotification = false
-                    }, 2000)
-                }
+// Computed Properties
+const maxPage = computed(() => {
+    return Math.ceil(state.items / (state.layout[0] * state.layout[1]));
+});
 
-
-            },
-            deep: true
-        }
-    },
-    computed: {
-        maxPage() {
-            return Math.ceil(this.items / (this.layout[0] * this.layout[1]))
-        },
-        // chunk up nuxt.inventory into rows of 3, 2 rows per page
-        /*
-         * Chunks looks like
-         *  [
-         *      chunk0 -> {
-         *          product0 -> 'card name': {price, tags, etc}
-         *          productN -> ...
-         *          pageNumber -> 1
-         *      }
-         *      chunkN ->
-         *
-         *  ]
-         *
-         */
-        chunks() {
-            let chunks = []
-            let entries = 1
-            let pageNumber = 1
-            let chunk = {}
-            for (let product in this.inventory) {
-                if (this.inventory[product].tags.indexOf(this.filter) > -1 || this.filter === 'all') {
-                    if (product.toLowerCase().indexOf(this.searchFilter.toLowerCase()) > -1) {
-                        chunk[product] = this.inventory[product]
-                        if (entries % this.layout[0] == 0) {
-                            chunk.pageNumber = pageNumber
-                            chunks.push(chunk)
-                            chunk = {}
-                            if (chunks.length % this.layout[1] == 0) {
-                                pageNumber++
-                            }
-                        }
-                        entries += 1
+const chunks = computed(() => {
+    let chunks = [];
+    let entries = 1;
+    let pageNumber = 1;
+    let chunk = {};
+    let inventoryVal = inventory.value;
+    for (let product in inventoryVal) {
+        if (inventoryVal[product]?.tags?.indexOf(state.filter) > -1 || state.filter === 'all') {
+            if (product.toLowerCase().indexOf(state.searchFilter.toLowerCase()) > -1) {
+                chunk[product] = inventoryVal[product];
+                if (entries % state.layout[0] == 0) {
+                    chunk.pageNumber = pageNumber;
+                    chunks.push(chunk);
+                    chunk = {};
+                    if (chunks.length % state.layout[1] == 0) {
+                        pageNumber++;
                     }
                 }
+                entries += 1;
             }
-            this.items = entries
-            chunk.pageNumber = pageNumber
-            chunks.push(chunk)
-
-            return chunks
-        }
-    },
-    methods: {
-        setPageNumber: function (pos) {
-            window.scrollTo(0, 0)
-            const options = {
-                'prev': this.pageNumber > 1 ? this.pageNumber - 1 : this.pageNumber,
-                'first': this.pageNumber > 1 ? this.pageNumber - 1 : this.pageNumber,
-                'mid': this.pageNumber > 1 ? this.pageNumber : (this.pageNumber >= this.maxPage ? this.pageNumber : this.pageNumber + 1),
-                'last': this.pageNumber > 1 ? (this.pageNumber <= this.maxPage - 1 ? this.pageNumber + 1 : this.pageNumber) : (this.pageNumber >= this.maxPage ? this.pageNumber : this.pageNumber + 2),
-                'next': this.pageNumber <= this.maxPage - 1 ? this.pageNumber + 1 : this.pageNumber
-            }
-            this.pageNumber = options[pos]
-        },
-        btoa: function (s) {
-            return btoa(s)
-        },
-        filterByTag(tag) {
-            this.filter = tag
-            this.pageNumber = 1
         }
     }
+
+    state.items = entries;
+    chunk.pageNumber = pageNumber;
+    chunks.push(chunk);
+
+    return chunks;
+});
+
+// Watchers
+watch(cart, (newCart) => {
+    if (Object.keys(newCart).length > 0) {
+        state.showCartNotification = true
+        setTimeout(() => {
+            state.showCartNotification = false
+        }, 2000)
+    }
+}, { deep: true });
+
+// Methods
+function setPageNumber(pos) {
+    window.scrollTo(0, 0);
+    const options = {
+        'prev': state.pageNumber > 1 ? state.pageNumber - 1 : state.pageNumber,
+        'first': state.pageNumber > 1 ? state.pageNumber - 1 : state.pageNumber,
+        'mid': state.pageNumber > 1 ? state.pageNumber : (state.pageNumber >= maxPage.value ? state.pageNumber : state.pageNumber + 1),
+        'last': state.pageNumber > 1 ? (state.pageNumber <= maxPage.value - 1 ? state.pageNumber + 1 : state.pageNumber) : (state.pageNumber >= maxPage.value ? state.pageNumber : state.pageNumber + 2),
+        'next': state.pageNumber <= maxPage.value - 1 ? state.pageNumber + 1 : state.pageNumber
+    };
+    state.pageNumber = options[pos];
 }
+
+function filterByTag(tag) {
+    state.filter = tag;
+    state.pageNumber = 1;
+}
+
 </script>
 
 <style scoped>
+input.nosubmit {
+    margin: 10px 0 10px 5px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: #323232;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
 .cart-notification {
     position: fixed;
     right: 32px;
@@ -244,7 +231,32 @@ export default {
     }
 }
 
+.product-filters {
+    margin-bottom: 20px;
+}
 
+.product-filters ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.product-filters ul li {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #323232;
+    cursor: pointer;
+    padding: 1px 8px 1px 8px;
+    border-radius: 10px;
+}
+
+.product-filters ul li.active {
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+}
 
 .fade-enter-active,
 .fade-leave-active {

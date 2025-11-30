@@ -146,6 +146,18 @@ export default {
     cursor: not-allowed;
 }
 
+.outofstock-banner {
+    z-index: 4;
+    margin-top: 80px;
+    position: absolute;
+    background-color: lightslategray;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 700;
+    padding: 4px 5px 3px 3px;
+    border-radius: 3px;
+}
+
 @media only screen and (max-width: 767px) {
     .single-product-content {
         margin-left: 0;
