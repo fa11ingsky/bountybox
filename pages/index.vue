@@ -1,7 +1,7 @@
 <template>
     <div>
-        <FeaturedBanner v-if="!state.inSearch" :products="inventory" @update-filter="state.filter = $event" />
-        <CategoryBanner v-if="state.inSearch" @toggleSearch="state.inSearch = !state.inSearch"/>
+        <FeaturedBanner  :products="inventory" @update-filter="state.filter = $event" />
+        <CategoryBanner  @toggleSearch="state.inSearch = !state.inSearch" :openPane="state.inSearch" @setTag="(n) => filterByTag(n)"/>
         <div class="container">
             <div class="row w-200 justify-content-center">
                 <div class="col-md-8 d-flex align-items-center">
@@ -163,11 +163,14 @@ function setPageNumber(pos) {
 function filterByTag(tag) {
     state.filter = tag;
     state.pageNumber = 1;
+    console.log(`filtering ${tag}`)
 }
 
 </script>
 
 <style scoped>
+
+
 input.nosubmit {
     margin: 10px 0 10px 5px;
     width: 100%;
