@@ -168,7 +168,6 @@ watch(cart, (newCart) => {
 
 // Methods
 function setPageNumber(pos) {
-    window.scrollTo(0, 0);
     const options = {
         'prev': state.pageNumber > 1 ? state.pageNumber - 1 : state.pageNumber,
         'first': state.pageNumber > 1 ? state.pageNumber - 1 : state.pageNumber,
