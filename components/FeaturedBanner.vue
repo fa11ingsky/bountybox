@@ -85,8 +85,10 @@ function slideStyle(product) {
   const desktop = `${overlayGradient}, url("/img/${product.img_large}")`;
   const mobile = `${overlayGradient}, url("/img/${product.img_small}")`;
 
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 640;
+
   return {
-    backgroundImage: window.innerWidth <= 640 ? mobile : desktop
+    backgroundImage: isMobile ? mobile : desktop
   };
 }
 
