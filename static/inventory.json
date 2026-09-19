@@ -5,7 +5,8 @@
     "url": "SM_01_2018",
     "description": "The Superman comic series that commenced in 2018 brought fresh life to the Man of Steel's adventures. It ushered in a new era, exploring compelling storylines and character development. This modern take on Superman delved into his dual identity, showcasing both his superhuman feats and his relatable, human struggles. It's a captivating continuation of the timeless superhero's legacy, revitalizing the iconic character for a new generation of readers.",
     "tags": [
-      "comics"
+      "comics",
+      "Superman"
     ],
     "stock": 1
   },
@@ -15,7 +16,8 @@
     "url": "SM_02_2018",
     "description": "The Superman comic series that commenced in 2018 brought fresh life to the Man of Steel's adventures. It ushered in a new era, exploring compelling storylines and character development. This modern take on Superman delved into his dual identity, showcasing both his superhuman feats and his relatable, human struggles. It's a captivating continuation of the timeless superhero's legacy, revitalizing the iconic character for a new generation of readers.",
     "tags": [
-      "comics"
+      "comics",
+      "Superman"
     ],
     "stock": 1
   },
@@ -25,7 +27,8 @@
     "url": "SM_03_2018",
     "description": "The Superman comic series that commenced in 2018 brought fresh life to the Man of Steel's adventures. It ushered in a new era, exploring compelling storylines and character development. This modern take on Superman delved into his dual identity, showcasing both his superhuman feats and his relatable, human struggles. It's a captivating continuation of the timeless superhero's legacy, revitalizing the iconic character for a new generation of readers.",
     "tags": [
-      "comics"
+      "comics",
+      "Superman"
     ],
     "stock": 1
   },
@@ -35,7 +38,8 @@
     "url": "SM_04_2018",
     "description": "The Superman comic series that commenced in 2018 brought fresh life to the Man of Steel's adventures. It ushered in a new era, exploring compelling storylines and character development. This modern take on Superman delved into his dual identity, showcasing both his superhuman feats and his relatable, human struggles. It's a captivating continuation of the timeless superhero's legacy, revitalizing the iconic character for a new generation of readers.",
     "tags": [
-      "comics"
+      "comics",
+      "Superman"
     ],
     "stock": 1
   },
@@ -45,7 +49,8 @@
     "url": "SM_05_2018",
     "description": "The Superman comic series that commenced in 2018 brought fresh life to the Man of Steel's adventures. It ushered in a new era, exploring compelling storylines and character development. This modern take on Superman delved into his dual identity, showcasing both his superhuman feats and his relatable, human struggles. It's a captivating continuation of the timeless superhero's legacy, revitalizing the iconic character for a new generation of readers.",
     "tags": [
-      "comics"
+      "comics",
+      "Superman"
     ],
     "stock": 1
   },
@@ -55,7 +60,8 @@
     "url": "SM_06_2018",
     "description": "The Superman comic series that commenced in 2018 brought fresh life to the Man of Steel's adventures. It ushered in a new era, exploring compelling storylines and character development. This modern take on Superman delved into his dual identity, showcasing both his superhuman feats and his relatable, human struggles. It's a captivating continuation of the timeless superhero's legacy, revitalizing the iconic character for a new generation of readers.",
     "tags": [
-      "comics"
+      "comics",
+      "Superman"
     ],
     "stock": 1
   },
@@ -75,7 +81,7 @@
     "url": "sm12-252",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
-      "pokemon"
+      "pokemon","Sun and Moon - Cosmic Eclipse"
     ],
     "stock": 1
   },
@@ -85,19 +91,9 @@
     "url": "sm12-156",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
-      "pokemon"
+      "pokemon","Sun and Moon - Cosmic Eclipse"
     ],
     "stock": 2
-  },
-  "Mewtwo & Mew GX (SM11 71)": {
-    "price": 85,
-    "img": "SM11_EN_71.png",
-    "url": "sm11-71",
-    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
-    "tags": [
-      "pokemon"
-    ],
-    "stock": 1
   },
   "Single Strike Style Mustard (SWSH5 163)": {
     "price": 67,
@@ -113,16 +109,6 @@
     "price": 24,
     "img": "SM10_EN_204.png",
     "url": "sm10-204",
-    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
-    "tags": [
-      "pokemon"
-    ],
-    "stock": 1
-  },
-  "Rowlet & Alolan Exeggutor GX (SM11 1)": {
-    "price": 56,
-    "img": "SM11_EN_1.png",
-    "url": "sm11-1",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
       "pokemon"
@@ -145,7 +131,7 @@
     "url": "sm12-214",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
-      "pokemon"
+      "pokemon","Sun and Moon - Cosmic Eclipse"
     ],
     "stock": 1
   },
@@ -196,6 +182,7 @@
     "description": "Dimensions: 24 x 14 inches. Made with Neoprene",
     "tags": [
       "mats",
+      "Playmats",
       "pokemon"
     ],
     "stock": 1
@@ -220,23 +207,13 @@
     ],
     "stock": 1
   },
-  "Dragonite GX (SM11 152)": {
-    "img": "SM11_EN_152.png",
-    "price": 40,
-    "url": "SM11_EN_152",
-    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
-    "tags": [
-      "pokemon"
-    ],
-    "stock": 2
-  },
   "WishiWashi GX (SM12 63)": {
     "img": "SM12_EN_63.png",
     "price": 30,
     "url": "SM12_EN_63",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
-      "pokemon"
+      "pokemon","Sun and Moon - Cosmic Eclipse"
     ],
     "stock": 1
   },
@@ -246,7 +223,7 @@
     "url": "SM12_EN_110",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
-      "pokemon"
+      "pokemon","Sun and Moon - Cosmic Eclipse"
     ],
     "stock": 1
   },
@@ -256,7 +233,7 @@
     "url": "SM12_EN_238",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
-      "pokemon"
+      "pokemon","Sun and Moon - Cosmic Eclipse"
     ],
     "stock": 1
   },
@@ -266,7 +243,7 @@
     "url": "SM12_EN_243",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
-      "pokemon"
+      "pokemon","Sun and Moon - Cosmic Eclipse"
     ],
     "stock": 1
   },
@@ -276,7 +253,7 @@
     "url": "SM12_EN_244",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
-      "pokemon"
+      "pokemon","Sun and Moon - Cosmic Eclipse"
     ],
     "stock": 1
   },
