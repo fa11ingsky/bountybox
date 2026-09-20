@@ -47,7 +47,7 @@
         "tags": [
             "pokemon","Jungle"
         ],
-        "stock": 1
+        "stock": 2
     },
     "Mr. Mime (JU 6)": {
         "img": "JU/JU_6.jpg",
@@ -91,13 +91,13 @@
     },
     "Scyther (JU 10)": {
         "img": "JU/JU_10.jpg",
-        "price": "N/A",
+        "price": 1300,
         "url": "JU_10",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Jungle"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Snorlax (JU 11)": {
         "img": "JU/JU_11.jpg",
@@ -161,13 +161,13 @@
     },
     "Clefable (JU 17)": {
         "img": "JU/JU_17.jpg",
-        "price": "N/A",
+        "price": 96,
         "url": "JU_17",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Jungle"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Electrode (JU 18)": {
         "img": "JU/JU_18.jpg",
@@ -261,13 +261,13 @@
     },
     "Snorlax (JU 27)": {
         "img": "JU/JU_27.jpg",
-        "price": "N/A",
+        "price": 427,
         "url": "JU_27",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Jungle"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Vaporeon (JU 28)": {
         "img": "JU/JU_28.jpg",
@@ -317,7 +317,7 @@
         "tags": [
             "pokemon","Jungle"
         ],
-        "stock": 1
+        "stock": 2
     },
     "Butterfree (JU 33)": {
         "img": "JU/JU_33.jpg",

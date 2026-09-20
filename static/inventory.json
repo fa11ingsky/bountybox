@@ -2853,5 +2853,125 @@
       "pokemon"
     ],
     "stock": 3
+  },
+  "Ditto (Fossil 3/62)": {
+    "img": "ditto-fossil3.jpg",
+    "price": 1594,
+    "url": "ditto-fossil3",
+    "description": "Vintage WOTC-era holo rare. Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Zapdos (Wizards Black Star Promo 23)": {
+    "img": "zapdos-promo23.jpg",
+    "price": 157,
+    "url": "zapdos-promo23",
+    "description": "Vintage WOTC-era promo (Lightning Burn attack). Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Computer Search (Base Set 71/102)": {
+    "img": "computer-search-base71.jpg",
+    "price": 76,
+    "url": "computer-search-base71",
+    "description": "Vintage WOTC-era holo rare Trainer. Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Super Energy Removal (Base Set 79/102)": {
+    "img": "super-energy-removal-base79.jpg",
+    "price": 92,
+    "url": "super-energy-removal-base79",
+    "description": "Vintage WOTC-era holo rare Trainer. Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Recycle (Fossil 61/62, 1st Edition)": {
+    "img": "recycle-fossil61-1stedition.jpg",
+    "price": 112,
+    "url": "recycle-fossil61-1st-edition",
+    "description": "Vintage WOTC-era common Trainer, 1st Edition print. Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Good Manners (Gym Heroes 111/132, 1st Edition)": {
+    "img": "good-manners-gym111-1stedition.jpg",
+    "price": 273,
+    "url": "good-manners-gym111-1st-edition",
+    "description": "Vintage WOTC-era uncommon Trainer, 1st Edition print. Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Slowbro (Fossil 43/62)": {
+    "img": "slowbro-fossil43.jpg",
+    "price": 162,
+    "url": "slowbro-fossil43",
+    "description": "Vintage WOTC-era holo rare. Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Haunter (Fossil 6/62)": {
+    "img": "haunter-fossil6.jpg",
+    "price": 1107,
+    "url": "haunter-fossil6",
+    "description": "Vintage WOTC-era holo rare. Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Meowth (Wizards Black Star Promo 10)": {
+    "img": "meowth-promo10.jpg",
+    "price": 7400,
+    "url": "meowth-promo10",
+    "description": "Vintage WOTC-era holo promo (Cosmo Holo, Game Boy Color TCG release). Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Dragonite (Fossil 19/62)": {
+    "img": "dragonite-fossil19.jpg",
+    "price": 947,
+    "url": "dragonite-fossil19",
+    "description": "Vintage WOTC-era common (non-holo). Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Ancient Mew (Promo)": {
+    "img": "ancient-mew-promo.jpg",
+    "price": 2400,
+    "url": "ancient-mew-promo",
+    "description": "1999 movie promo card with ancient-script holofoil printing. Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Pikachu (Wizards Black Star Promo 4)": {
+    "img": "pikachu-promo4.jpg",
+    "price": 1235,
+    "url": "pikachu-promo4",
+    "description": "Vintage WOTC-era movie promo (Recharge/Thunderbolt attacks). Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
   }
 }
