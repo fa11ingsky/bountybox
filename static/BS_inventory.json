@@ -1,0 +1,622 @@
+{
+    "Alakazam (BS 1)": {
+        "img": "BS/BS_1.jpg",
+        "price": "N/A",
+        "url": "BS_1",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Blastoise (BS 2)": {
+        "img": "BS/BS_2.jpg",
+        "price": "N/A",
+        "url": "BS_2",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Chansey (BS 3)": {
+        "img": "BS/BS_3.jpg",
+        "price": "N/A",
+        "url": "BS_3",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Charizard (BS 4)": {
+        "img": "BS/BS_4.jpg",
+        "price": "N/A",
+        "url": "BS_4",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Clefairy (BS 5)": {
+        "img": "BS/BS_5.jpg",
+        "price": "N/A",
+        "url": "BS_5",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Gyarados (BS 6)": {
+        "img": "BS/BS_6.jpg",
+        "price": "N/A",
+        "url": "BS_6",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Hitmonchan (BS 7)": {
+        "img": "BS/BS_7.jpg",
+        "price": "N/A",
+        "url": "BS_7",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Machamp (BS 8)": {
+        "img": "BS/BS_8.jpg",
+        "price": "N/A",
+        "url": "BS_8",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Magneton (BS 9)": {
+        "img": "BS/BS_9.jpg",
+        "price": "N/A",
+        "url": "BS_9",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Mewtwo (BS 10)": {
+        "img": "BS/BS_10.jpg",
+        "price": "N/A",
+        "url": "BS_10",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Nidoking (BS 11)": {
+        "img": "BS/BS_11.jpg",
+        "price": "N/A",
+        "url": "BS_11",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Ninetales (BS 12)": {
+        "img": "BS/BS_12.jpg",
+        "price": "N/A",
+        "url": "BS_12",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Poliwrath (BS 13)": {
+        "img": "BS/BS_13.jpg",
+        "price": "N/A",
+        "url": "BS_13",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Raichu (BS 14)": {
+        "img": "BS/BS_14.jpg",
+        "price": "N/A",
+        "url": "BS_14",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Venusaur (BS 15)": {
+        "img": "BS/BS_15.jpg",
+        "price": "N/A",
+        "url": "BS_15",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Zapdos (BS 16)": {
+        "img": "BS/BS_16.jpg",
+        "price": "N/A",
+        "url": "BS_16",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Beedrill (BS 17)": {
+        "img": "BS/BS_17.jpg",
+        "price": "N/A",
+        "url": "BS_17",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Dragonair (BS 18)": {
+        "img": "BS/BS_18.jpg",
+        "price": "N/A",
+        "url": "BS_18",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Dugtrio (BS 19)": {
+        "img": "BS/BS_19.jpg",
+        "price": "N/A",
+        "url": "BS_19",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Electabuzz (BS 20)": {
+        "img": "BS/BS_20.jpg",
+        "price": "N/A",
+        "url": "BS_20",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Electrode (BS 21)": {
+        "img": "BS/BS_21.jpg",
+        "price": "N/A",
+        "url": "BS_21",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Pidgeotto (BS 22)": {
+        "img": "BS/BS_22.jpg",
+        "price": "N/A",
+        "url": "BS_22",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Arcanine (BS 23)": {
+        "img": "BS/BS_23.jpg",
+        "price": "N/A",
+        "url": "BS_23",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Charmeleon (BS 24)": {
+        "img": "BS/BS_24.jpg",
+        "price": "N/A",
+        "url": "BS_24",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Dratini (BS 26)": {
+        "img": "BS/BS_26.jpg",
+        "price": "N/A",
+        "url": "BS_26",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Growlithe (BS 28)": {
+        "img": "BS/BS_28.jpg",
+        "price": "N/A",
+        "url": "BS_28",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Haunter (BS 29)": {
+        "img": "BS/BS_29.jpg",
+        "price": "N/A",
+        "url": "BS_29",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Ivysaur (BS 30)": {
+        "img": "BS/BS_30.jpg",
+        "price": "N/A",
+        "url": "BS_30",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Jynx (BS 31)": {
+        "img": "BS/BS_31.jpg",
+        "price": "N/A",
+        "url": "BS_31",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Kadabra (BS 32)": {
+        "img": "BS/BS_32.jpg",
+        "price": "N/A",
+        "url": "BS_32",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Machoke (BS 34)": {
+        "img": "BS/BS_34.jpg",
+        "price": "N/A",
+        "url": "BS_34",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Magikarp (BS 35)": {
+        "img": "BS/BS_35.jpg",
+        "price": "N/A",
+        "url": "BS_35",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Magmar (BS 36)": {
+        "img": "BS/BS_36.jpg",
+        "price": "N/A",
+        "url": "BS_36",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Poliwhirl (BS 38)": {
+        "img": "BS/BS_38.jpg",
+        "price": "N/A",
+        "url": "BS_38",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Wartortle (BS 42)": {
+        "img": "BS/BS_42.jpg",
+        "price": "N/A",
+        "url": "BS_42",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Abra (BS 43)": {
+        "img": "BS/BS_43.jpg",
+        "price": "N/A",
+        "url": "BS_43",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Bulbasaur (BS 44)": {
+        "img": "BS/BS_44.jpg",
+        "price": "N/A",
+        "url": "BS_44",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Charmander (BS 46)": {
+        "img": "BS/BS_46.jpg",
+        "price": "N/A",
+        "url": "BS_46",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Diglett (BS 47)": {
+        "img": "BS/BS_47.jpg",
+        "price": "N/A",
+        "url": "BS_47",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Drowzee (BS 49)": {
+        "img": "BS/BS_49.jpg",
+        "price": "N/A",
+        "url": "BS_49",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Gastly (BS 50)": {
+        "img": "BS/BS_50.jpg",
+        "price": "N/A",
+        "url": "BS_50",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Koffing (BS 51)": {
+        "img": "BS/BS_51.jpg",
+        "price": "N/A",
+        "url": "BS_51",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Machop (BS 52)": {
+        "img": "BS/BS_52.jpg",
+        "price": "N/A",
+        "url": "BS_52",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Magnemite (BS 53)": {
+        "img": "BS/BS_53.jpg",
+        "price": "N/A",
+        "url": "BS_53",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Nidoran M (BS 55)": {
+        "img": "BS/BS_55.jpg",
+        "price": "N/A",
+        "url": "BS_55",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Onix (BS 56)": {
+        "img": "BS/BS_56.jpg",
+        "price": "N/A",
+        "url": "BS_56",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Pikachu (BS 58)": {
+        "img": "BS/BS_58.jpg",
+        "price": "N/A",
+        "url": "BS_58",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Poliwag (BS 59)": {
+        "img": "BS/BS_59.jpg",
+        "price": "N/A",
+        "url": "BS_59",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Ponyta (BS 60)": {
+        "img": "BS/BS_60.jpg",
+        "price": "N/A",
+        "url": "BS_60",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Rattata (BS 61)": {
+        "img": "BS/BS_61.jpg",
+        "price": "N/A",
+        "url": "BS_61",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Sandshrew (BS 62)": {
+        "img": "BS/BS_62.jpg",
+        "price": "N/A",
+        "url": "BS_62",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Squirtle (BS 63)": {
+        "img": "BS/BS_63.jpg",
+        "price": "N/A",
+        "url": "BS_63",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Starmie (BS 64)": {
+        "img": "BS/BS_64.jpg",
+        "price": "N/A",
+        "url": "BS_64",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Staryu (BS 65)": {
+        "img": "BS/BS_65.jpg",
+        "price": "N/A",
+        "url": "BS_65",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Vulpix (BS 68)": {
+        "img": "BS/BS_68.jpg",
+        "price": "N/A",
+        "url": "BS_68",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Weedle (BS 69)": {
+        "img": "BS/BS_69.jpg",
+        "price": "N/A",
+        "url": "BS_69",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Clefairy Doll (BS 70)": {
+        "img": "BS/BS_70.jpg",
+        "price": "N/A",
+        "url": "BS_70",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Imposter Professor Oak (BS 73)": {
+        "img": "BS/BS_73.jpg",
+        "price": "N/A",
+        "url": "BS_73",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Professor Oak (BS 88)": {
+        "img": "BS/BS_88.jpg",
+        "price": "N/A",
+        "url": "BS_88",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Bill (BS 91)": {
+        "img": "BS/BS_91.jpg",
+        "price": "N/A",
+        "url": "BS_91",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Potion (BS 94)": {
+        "img": "BS/BS_94.jpg",
+        "price": "N/A",
+        "url": "BS_94",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    },
+    "Double Colorless Energy (BS 96)": {
+        "img": "BS/BS_96.jpg",
+        "price": "N/A",
+        "url": "BS_96",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "tags": [
+            "pokemon","Base Set"
+        ],
+        "stock": 0
+    }
+}

@@ -1521,13 +1521,13 @@
     },
     "Rapid Strike Urshifu V (SWSH05 153)": {
         "img": "SWSH5/SWSH5_EN_153.png",
-        "price": "N/A",
+        "price": "80",
         "url": "SWSH05_153",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sword and Shield - Battle Styles"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Tyranitar V (SWSH05 154)": {
         "img": "SWSH5/SWSH5_EN_154.png",

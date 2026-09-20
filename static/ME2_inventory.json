@@ -1289,6 +1289,16 @@
         ],
         "stock": 0
     },
+    "Dawn [Regional Championship Stamped] (ME2 87)": {
+        "img": "ME2/ME02_EN_87_regional_stamp.jpg",
+        "price": "500",
+        "url": "ME2_87_regional_stamp",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing. Stamped with the Pokemon Regional Championships foil stamp.",
+        "tags": [
+            "pokemon","Mega Evolution - Phantasmal Flames"
+        ],
+        "stock": 1
+    },
     "Mega Charizard X ex (ME2 130)": {
         "img": "ME2/ME02_EN_130.png",
         "price": "N/A",

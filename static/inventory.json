@@ -2558,5 +2558,55 @@
       "m2"
     ],
     "stock": 0
+  },
+  "Dark Gyarados (Team Rocket 8)": {
+    "img": "team-rocket-8.jpg",
+    "price": "1000",
+    "url": "team-rocket-8",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Mewtwo (WOTC Promo 3)": {
+    "img": "wotc-promo-3.jpg",
+    "price": "1000",
+    "url": "wotc-promo-3",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Galarian Obstagoon (MEGA Dream ex 209)": {
+    "img": "megadreamex-209.jpg",
+    "price": "30",
+    "url": "megadreamex-209",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Pikachu ex (Super Electric Breaker 33)": {
+    "img": "superelectricbreaker-33.jpg",
+    "price": "30",
+    "url": "superelectricbreaker-33",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Eternatus V (Darkness Ablaze 116)": {
+    "img": "darknessablaze-116.jpg",
+    "price": "20",
+    "url": "darknessablaze-116",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
   }
 }
