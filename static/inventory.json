@@ -2608,5 +2608,55 @@
       "pokemon"
     ],
     "stock": 1
+  },
+  "Celebi (Skyridge 145)": {
+    "img": "skyridge-145.jpg",
+    "price": "10000",
+    "url": "skyridge-145",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Gengar (Legendary Collection 11)": {
+    "img": "legendary-collection-11.jpg",
+    "price": "40000",
+    "url": "legendary-collection-11",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Meowth (Wizards Promo 10)": {
+    "img": "wizards-promo-10.jpg",
+    "price": "5000",
+    "url": "wizards-promo-10",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Charizard (Expedition 6)": {
+    "img": "expedition-6.jpg",
+    "price": "30000",
+    "url": "expedition-6",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Dark Alakazam (Team Rocket 1)": {
+    "img": "team-rocket-1.jpg",
+    "price": "1500",
+    "url": "team-rocket-1",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
   }
 }

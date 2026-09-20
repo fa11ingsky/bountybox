@@ -81,13 +81,13 @@
     },
     "Magneton (BS 9)": {
         "img": "BS/BS_9.jpg",
-        "price": "N/A",
+        "price": "1000",
         "url": "BS_9",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Base Set"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Mewtwo (BS 10)": {
         "img": "BS/BS_10.jpg",
@@ -101,13 +101,13 @@
     },
     "Nidoking (BS 11)": {
         "img": "BS/BS_11.jpg",
-        "price": "N/A",
+        "price": "700",
         "url": "BS_11",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Base Set"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Ninetales (BS 12)": {
         "img": "BS/BS_12.jpg",
@@ -561,13 +561,13 @@
     },
     "Clefairy Doll (BS 70)": {
         "img": "BS/BS_70.jpg",
-        "price": "N/A",
+        "price": "200",
         "url": "BS_70",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Base Set"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Imposter Professor Oak (BS 73)": {
         "img": "BS/BS_73.jpg",

@@ -41,23 +41,23 @@
     },
     "Kangaskhan (JU 5)": {
         "img": "JU/JU_5.jpg",
-        "price": "N/A",
+        "price": "5000",
         "url": "JU_5",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Jungle"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Mr. Mime (JU 6)": {
         "img": "JU/JU_6.jpg",
-        "price": "N/A",
+        "price": "800",
         "url": "JU_6",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Jungle"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Nidoqueen (JU 7)": {
         "img": "JU/JU_7.jpg",
@@ -311,13 +311,13 @@
     },
     "Wigglytuff (JU 32)": {
         "img": "JU/JU_32.jpg",
-        "price": "N/A",
+        "price": "800",
         "url": "JU_32",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Jungle"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Butterfree (JU 33)": {
         "img": "JU/JU_33.jpg",
