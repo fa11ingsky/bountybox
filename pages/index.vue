@@ -26,6 +26,26 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="pagination-wrap">
+                        <ul>
+                            <li><a @click="setPageNumber('prev')">Prev</a></li>
+                            <li><a :class="state.pageNumber == 1 ? 'active' : ''" @click="setPageNumber('first')">{{
+                                state.pageNumber >
+                                    1 ?
+                                    state.pageNumber - 1 : state.pageNumber }}</a></li>
+                            <li><a :class="(state.pageNumber != 1 && state.pageNumber != maxPage + 1) ? 'active' : ''"
+                                    @click="setPageNumber('mid')">{{ state.pageNumber > 1 ? state.pageNumber : state.pageNumber + 1 }}</a>
+                            </li>
+                            <li><a @click="setPageNumber('last')">{{ state.pageNumber > 1 ? state.pageNumber + 1 : state.pageNumber + 2
+                                    }}</a>
+                            </li>
+                            <li><a @click="setPageNumber('next')">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <template v-for="chunk in chunks">
                 <div class="row product-row " v-if="state.pageNumber == chunk.pageNumber">
                     <template v-for="(data, product) in chunk">
@@ -88,7 +108,6 @@ import { computed, reactive, watch } from 'vue';
 
 // Existing Functions from store/inventory.js
 const inventory = getInventory();
-console.log(inventory)
 const cart = getCart();
 
 // Reactive State
@@ -149,7 +168,6 @@ watch(cart, (newCart) => {
 
 // Methods
 function setPageNumber(pos) {
-    window.scrollTo(0, 0);
     const options = {
         'prev': state.pageNumber > 1 ? state.pageNumber - 1 : state.pageNumber,
         'first': state.pageNumber > 1 ? state.pageNumber - 1 : state.pageNumber,

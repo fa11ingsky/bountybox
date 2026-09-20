@@ -92,7 +92,7 @@
                     </div>
                     -->
                     <div class="text-center">
-                        <p>Copyrights &copy; 2025 - <a href="https://www.armourscope.com/">ArmourScope</a>, All Rights
+                        <p>Copyrights &copy; 2026 - <a href="https://www.armourscope.com/">ArmourScope</a>, All Rights
                             Reserved.</p>
                     </div>
                 </div>

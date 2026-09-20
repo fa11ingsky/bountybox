@@ -44,8 +44,8 @@ const categories = {
     pokemon: {
         name: 'Pokemon',
         subcategories: {
-            'TCG': ["Mega Evolution", "Mega Evolution - Phantasmal Flames", "Sword and Shield", "Sun and Moon - Team Up", "Sun and Moon - Unified Minds",
-                "Sun and Moon - Unbroken Bonds", "Sun and Moon - Cosmic Eclipse"
+            'TCG': ["Mega Evolution", "Mega Evolution - Phantasmal Flames", "Sword and Shield", "Sword and Shield - Battle Styles", "Sun and Moon - Team Up", "Sun and Moon - Unified Minds",
+                "Sun and Moon - Unbroken Bonds", "Sun and Moon - Cosmic Eclipse", "Scarlet and Violet - Journey Together", "Base Set", "Jungle"
             ],
             'Accessories': ["Playmats"],
             'Figures': ["Coming Soon!"]
