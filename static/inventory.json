@@ -2649,13 +2649,108 @@
     ],
     "stock": 1
   },
-  "Dark Alakazam (Team Rocket 1)": {
-    "img": "team-rocket-1.jpg",
+  "Dark Alakazam (Team Rocket 18)": {
+    "img": "team-rocket-18.jpg",
     "price": "1500",
-    "url": "team-rocket-1",
+    "url": "team-rocket-18",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
     "tags": [
       "pokemon"
+    ],
+    "stock": 1
+  },
+  "Terapagos ex (Stellar Crown 128/142) [Prize Pack Stamped]": {
+    "img": "terapagos-ex-scr128-pp.jpg",
+    "price": 20,
+    "url": "terapagos-ex-scr128-pp",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing. Regional Championships Prize Pack stamped print.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Jolteon ex (Prismatic Evolutions 030/131) [Prize Pack Stamped]": {
+    "img": "jolteon-ex-pre030-pp.jpg",
+    "price": 104,
+    "url": "jolteon-ex-pre030-pp",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing. Regional Championships Prize Pack stamped print.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Galarian Slowking VMAX (Chilling Reign 100/198)": {
+    "img": "galarian-slowking-vmax-cre100.jpg",
+    "price": 40,
+    "url": "galarian-slowking-vmax-cre100",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Blissey ex (Twilight Masquerade 134/167) [Prize Pack Stamped]": {
+    "img": "blissey-ex-twm134-pp.jpg",
+    "price": 23,
+    "url": "blissey-ex-twm134-pp",
+    "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing. Prize Pack Cosmos Holo print.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Dark Alakazam (Japanese Rocket Gang 65)": {
+    "img": "dark-alakazam-jp-rocket-gang.jpg",
+    "price": 705,
+    "url": "dark-alakazam-jp-rocket-gang",
+    "description": "Japanese-language Pokemon TCG card from the 1997 Rocket Gang expansion (わるいフーディン) - the Japanese equivalent of English Team Rocket's Dark Alakazam. Excellent condition, delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon",
+      "japanese"
+    ],
+    "stock": 1
+  },
+  "Dark Arbok (Japanese Rocket Gang 24)": {
+    "img": "dark-arbok-jp-rocket-gang.jpg",
+    "price": 284,
+    "url": "dark-arbok-jp-rocket-gang",
+    "description": "Japanese-language Pokemon TCG card from the 1997 Rocket Gang expansion (わるいアーボック). Excellent condition, delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon",
+      "japanese"
+    ],
+    "stock": 1
+  },
+  "Dark Weezing (Japanese Rocket Gang 110)": {
+    "img": "dark-weezing-jp-rocket-gang.jpg",
+    "price": 281,
+    "url": "dark-weezing-jp-rocket-gang",
+    "description": "Japanese-language Pokemon TCG card from the 1997 Rocket Gang expansion (わるいマタドガス). Excellent condition, delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon",
+      "japanese"
+    ],
+    "stock": 1
+  },
+  "Alakazam (Japanese Expansion Pack 65)": {
+    "img": "alakazam-jp-expansion-pack.jpg",
+    "price": 1629,
+    "url": "alakazam-jp-expansion-pack",
+    "description": "Japanese-language Pokemon TCG card from the vintage base Expansion Pack (フーディン) - the Japanese equivalent of the English Base Set. Excellent condition, delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon",
+      "japanese"
+    ],
+    "stock": 1
+  },
+  "Sabrina's Alakazam (Japanese Yamabuki City Gym 65)": {
+    "img": "sabrinas-alakazam-jp-yamabuki.jpg",
+    "price": 552,
+    "url": "sabrinas-alakazam-jp-yamabuki",
+    "description": "Japanese-language Pokemon TCG card (ナツメのフーディン) - the Japanese equivalent of English Gym Challenge's Sabrina's Alakazam. Excellent condition, delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon",
+      "japanese"
     ],
     "stock": 1
   }

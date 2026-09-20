@@ -1141,13 +1141,13 @@
     },
     "Mega Lopunny ex (ME2 115)": {
         "img": "ME2/ME02_EN_115.png",
-        "price": "N/A",
+        "price": 29,
         "url": "ME2_115",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Mega Evolution - Phantasmal Flames"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Battle Cage (ME2 116)": {
         "img": "ME2/ME02_EN_116.png",
@@ -1171,13 +1171,13 @@
     },
     "Dawn (ME2 118)": {
         "img": "ME2/ME02_EN_118.png",
-        "price": "N/A",
+        "price": 26,
         "url": "ME2_118",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Mega Evolution - Phantasmal Flames"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Firebreather (ME2 119)": {
         "img": "ME2/ME02_EN_119.png",

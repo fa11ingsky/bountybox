@@ -549,15 +549,15 @@
         ],
         "stock": 0
     },
-    "Lillie's Clefairy ex (SV09 56)": {
-        "img": "SV09/SV09_EN_56.png",
-        "price": "N/A",
+    "Lillie's Clefairy ex (SV09 56) [Prize Pack Stamped]": {
+        "img": "SV09/SV09_56_prizepack.jpg",
+        "price": 44,
         "url": "SV09_56",
-        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
+        "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing. Prize Pack Series 7 stamped print.",
         "tags": [
             "pokemon","Scarlet and Violet - Journey Together"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Alolan Marowak (SV09 57)": {
         "img": "SV09/SV09_EN_57.png",
