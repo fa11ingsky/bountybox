@@ -191,13 +191,13 @@
     },
     "Reshiram & Charizard GX (SM10 20)": {
         "img": "SM10/SM10_20.png",
-        "price": "N/A",
+        "price": 240,
         "url": "SM10_20",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sun and Moon - Unbroken Bonds"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Growlithe (SM10 21)": {
         "img": "SM10/SM10_21.png",
@@ -241,13 +241,13 @@
     },
     "Volcanion (SM10 25)": {
         "img": "SM10/SM10_25.png",
-        "price": "N/A",
+        "price": 94,
         "url": "SM10_25",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sun and Moon - Unbroken Bonds"
         ],
-        "stock": 0
+        "stock": 4
     },
     "Litten (SM10 26)": {
         "img": "SM10/SM10_26.png",
@@ -1711,13 +1711,13 @@
     },
     "Fire Crystal (SM10 173)": {
         "img": "SM10/SM10_173.png",
-        "price": "N/A",
+        "price": 2,
         "url": "SM10_173",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sun and Moon - Unbroken Bonds"
         ],
-        "stock": 0
+        "stock": 2
     },
     "Giovanni's Exile (SM10 174)": {
         "img": "SM10/SM10_174.png",
@@ -1731,13 +1731,13 @@
     },
     "Green's Exploration (SM10 175)": {
         "img": "SM10/SM10_175.png",
-        "price": "N/A",
+        "price": 2,
         "url": "SM10_175",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sun and Moon - Unbroken Bonds"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Janine (SM10 176)": {
         "img": "SM10/SM10_176.png",
@@ -1871,13 +1871,13 @@
     },
     "Welder (SM10 189)": {
         "img": "SM10/SM10_189.png",
-        "price": "N/A",
+        "price": 3,
         "url": "SM10_189",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sun and Moon - Unbroken Bonds"
         ],
-        "stock": 0
+        "stock": 2
     },
     "Triple Acceleration Energy (SM10 190)": {
         "img": "SM10/SM10_190.png",
@@ -1938,6 +1938,16 @@
             "pokemon","Sun and Moon - Unbroken Bonds"
         ],
         "stock": 0
+    },
+    "Dedenne GX (SM10 195a)": {
+        "img": "SM10/SM10_195a.jpg",
+        "price": 212,
+        "url": "SM10_195a",
+        "description": "Excellent condition. Delivered in a sleeve and top loader casing. Alternate Art Promo print (distinct from the regular 195/214 holo rare above).",
+        "tags": [
+            "pokemon","Sun and Moon - Unbroken Bonds"
+        ],
+        "stock": 1
     },
     "Muk & Alolan Muk GX (SM10 196)": {
         "img": "SM10/SM10_196.png",

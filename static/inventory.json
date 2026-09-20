@@ -2661,7 +2661,7 @@
   },
   "Terapagos ex (Stellar Crown 128/142) [Prize Pack Stamped]": {
     "img": "terapagos-ex-scr128-pp.jpg",
-    "price": 20,
+    "price": 10,
     "url": "terapagos-ex-scr128-pp",
     "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing. Regional Championships Prize Pack stamped print.",
     "tags": [
@@ -2753,5 +2753,105 @@
       "japanese"
     ],
     "stock": 1
+  },
+  "Professor's Research (Sword & Shield 178/202)": {
+    "img": "professors-research-swsh178.jpg",
+    "price": 2,
+    "url": "professors-research-swsh178",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 3
+  },
+  "Vitality Band (Sword & Shield 185/202)": {
+    "img": "vitality-band-swsh185.jpg",
+    "price": 2,
+    "url": "vitality-band-swsh185",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Quick Ball (Sword & Shield 179/202)": {
+    "img": "quick-ball-swsh179.jpg",
+    "price": 2,
+    "url": "quick-ball-swsh179",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 2
+  },
+  "Victini V (Sword & Shield 25/202)": {
+    "img": "victini-v-swsh25.jpg",
+    "price": 61,
+    "url": "victini-v-swsh25",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Mallow & Lana (Cosmic Eclipse 198/236)": {
+    "img": "mallow-lana-ce198.jpg",
+    "price": 2,
+    "url": "mallow-lana-ce198",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Tag Call (Cosmic Eclipse 206/236)": {
+    "img": "tag-call-ce206.jpg",
+    "price": 2,
+    "url": "tag-call-ce206",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 2
+  },
+  "Charizard & Braixen GX (Cosmic Eclipse 22/236)": {
+    "img": "charizard-braixen-gx-ce22.jpg",
+    "price": 184,
+    "url": "charizard-braixen-gx-ce22",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Cynthia & Caitlin (Cosmic Eclipse 189/236)": {
+    "img": "cynthia-caitlin-ce189.jpg",
+    "price": 5,
+    "url": "cynthia-caitlin-ce189",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 2
+  },
+  "Pokemon Catcher (Sun & Moon 126/149)": {
+    "img": "pokemon-catcher-sm126.jpg",
+    "price": 2,
+    "url": "pokemon-catcher-sm126",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 1
+  },
+  "Switch (Sun & Moon 132/149)": {
+    "img": "switch-sm132.jpg",
+    "price": 51,
+    "url": "switch-sm132",
+    "description": "Excellent condition. Delivered in a sleeve and top loader casing.",
+    "tags": [
+      "pokemon"
+    ],
+    "stock": 3
   }
 }

@@ -1961,23 +1961,23 @@
     },
     "Giant Hearth (SM11 197)": {
         "img": "SM11/SM11_197.png",
-        "price": "N/A",
+        "price": 2,
         "url": "SM11_197",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sun and Moon - Unified Minds"
         ],
-        "stock": 0
+        "stock": 2
     },
     "Great Potion (SM11 198)": {
         "img": "SM11/SM11_198.png",
-        "price": "N/A",
+        "price": 2,
         "url": "SM11_198",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sun and Moon - Unified Minds"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Grimsley (SM11 199)": {
         "img": "SM11/SM11_199.png",
@@ -2051,13 +2051,13 @@
     },
     "Reset Stamp (SM11 206)": {
         "img": "SM11/SM11_206.png",
-        "price": "N/A",
+        "price": 2,
         "url": "SM11_206",
         "description": "Excellent condition, generally encased immediately after pulling from a booster pack. Delivered in a sleeve and top loader casing.",
         "tags": [
             "pokemon","Sun and Moon - Unified Minds"
         ],
-        "stock": 0
+        "stock": 1
     },
     "Slumbering Forest (SM11 207)": {
         "img": "SM11/SM11_207.png",
